@@ -6,7 +6,7 @@ Fecha de Inicio del proyecto: 05/08/2021.
 Día 1). Un grupo se encargó de buscar la informacion, formular las preguntas y las posibles respuestas, el otro de crear la landing page, la cual fue creada.
 Día 2). Se usó HTML5 y CSS3 para el formulario de login y registro (pensando en su posterior modificación con Django). Se crearon las paginas de conocer al equipo y de terminos y condiciones.
 Día 3). Nos volvímos a reunir para discutir acerca de por donde iniciar a usar Django, coincidimos en que empezaríamos por el Login y Registro, para luego seguir con el admin. Mockup definido.
-Día 4). 
+Día 4). Nueva Reunión. Participamos los 8 de la misma, iniciamos el proyecto Django. (08/08/2021)
 
 
 
@@ -26,3 +26,10 @@ Esta página consiste en las siguientes partes:
  - Perfil de Participante:
  
  - Juego:
+
+
+ Créditos y participación general:
+ Mockup: Federico Asis
+ Landing Page, Meet the team page, terminos y condiciones: Ulises Mariano Melgarejo
+ Inicialización de proyecto Django: Carlos Rudaz
+ 
