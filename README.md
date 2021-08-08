@@ -29,7 +29,7 @@ Esta página consiste en las siguientes partes:
 
 
  Créditos y participación general:
- Mockup: Federico Asis
- Landing Page, Meet the team page, terminos y condiciones: Ulises Mariano Melgarejo
- Inicialización de proyecto Django: Carlos Rudaz
+ Mockup: Federico Asis;
+ Landing Page, Meet the team page, terminos y condiciones: Ulises Mariano Melgarejo;
+ Inicialización de proyecto Django: Carlos Rudaz;
  
