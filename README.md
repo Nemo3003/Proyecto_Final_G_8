@@ -32,7 +32,7 @@ Esta página consiste en las siguientes partes:
 
 
  Participación general:
- Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti;
+ Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti, Mauricio Sosa;
  Preguntas y Respuestas: Keith Magin Leonel Denysiuk, Mauricio Sosa;
  Landing Page, Meet the team page, terminos y condiciones: Ulises Mariano Melgarejo;
  Inicialización de proyecto Django: Carlos Rudaz;
