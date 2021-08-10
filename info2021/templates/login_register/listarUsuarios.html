@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    Lista de Usuarios
+{% endblock title %}
+
+
+{% block body %}
+    
+    <ul>
+        {% for user in usuarios %}
+
+        <li>
+            {{user.nombres}} {{user.apellidos}}, tiene como nombre de usuario {{user.usuario}}.
+        </li>
+
+        {% endfor %}
+    </ul>
+    
+{% endblock body %}
+

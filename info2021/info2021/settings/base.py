@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'aplicaciones.login_register',
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,7 @@ WSGI_APPLICATION = 'info2021.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'proyecto_lo_de_lali',
+        'NAME': 'info2021_proyecto',
         'USER': 'root',
         'PASSWORD': 'CarlosRudaz89',
         'HOST': 'localhost',
