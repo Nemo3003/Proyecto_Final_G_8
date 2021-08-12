@@ -23,6 +23,8 @@ Día 6). Tareas reasignadas, esencialmente nos dividimos en tres grupos, Login y
               
 Día 7). Más avance en materia del Login y Registro, así como en Admin, llegando a sentar las bases para las preguntas y el multiple choice. Hoy nos volvemos a reunir para trabajar más intensamente en el Login y el Registro. Página generadora de links descubierta: https://developers.facebook.com/docs/plugins/share-button/?locale=es_ES. Replanteamos un poco la estratégia en cuanto a la BBDD. A partir de mañana cargaremos las preguntas y respuestas.             
 
+Día 8). Avances en la BBDD fueron hechos, preguntas y respuestas cargadas.
+
 
 Esta página consiste en las siguientes partes:
 
@@ -49,7 +51,7 @@ Esta página consiste en las siguientes partes:
  
  Preguntas y Respuestas: Keith Magin Leonel Denysiuk, Mauricio Sosa;
  
- Diseño de la página: Ulises Mariano Melgarejo, Debora Yanotka, Mauricio Sosa;
+ Diseño de la página: Ulises Mariano Melgarejo;
  
  Inicialización de proyecto Django: Carlos Rudaz;
  
