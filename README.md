@@ -3,6 +3,7 @@ El proyecto final del grupo 8 de la comisión 6 del informatorio.
 
 Nos reunimos el día siguiente a la formación de los grupos para organizarnos y prepararnos para iniciar el proyecto en conjunto; nos dividimos en subgrupos.
 Fecha de Inicio del proyecto: 05/08/2021.
+
 Día 1). Un grupo se encargó de buscar la informacion, formular las preguntas y las posibles respuestas, el otro de crear la landing page, la cual fue creada.
 
 Día 2). Se usó HTML5 y CSS3 para el formulario de login y registro (pensando en su posterior modificación con Django). Se crearon las paginas de conocer al equipo y de terminos y condiciones.
