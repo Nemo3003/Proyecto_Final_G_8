@@ -14,7 +14,7 @@ Día 6). Tareas reasignadas, esencialmente nos dividimos en tres grupos, Login y
               - Admin: se encargarán de poner las preguntas en una base de datos y de empezar a configurar el admin.
               - Visual: se encargan de mejorar el apartado visual de la página, esencialmente, así como la interfaz del usuario, para que sea mucho más
               agradable a la vista.
-Día 7). Más avance en materia del Login y Registro, así como en Admin, llegando a sentar las bases para las preguntas y el multiple choice. Hoy nos volvemos a reunir para trabajar más intensamente en el Login y el Registro. Página generadora de links descubierta: https://developers.facebook.com/docs/plugins/share-button/?locale=es_ES                
+Día 7). Más avance en materia del Login y Registro, así como en Admin, llegando a sentar las bases para las preguntas y el multiple choice. Hoy nos volvemos a reunir para trabajar más intensamente en el Login y el Registro. Página generadora de links descubierta: https://developers.facebook.com/docs/plugins/share-button/?locale=es_ES. Replanteamos un poco la estratégia en cuanto a la BBDD.              
 
 
 Esta página consiste en las siguientes partes:
@@ -43,5 +43,5 @@ Esta página consiste en las siguientes partes:
  Diseño de la página: Ulises Mariano Melgarejo, Debora Yanotka, Mauricio Sosa;
  Inicialización de proyecto Django: Carlos Rudaz;
  Login y registro: Carlos Rudaz, Keith Magin Leonel Denysiuk, Mauricio Sosa;
- Base de datos: Ulises Mariano Melgarejo;
+ Base de datos: Ulises Mariano Melgarejo, Carlos Rudaz, Federico Asis;
  
