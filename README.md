@@ -4,16 +4,22 @@ El proyecto final del grupo 8 de la comisión 6 del informatorio.
 Nos reunimos el día siguiente a la formación de los grupos para organizarnos y prepararnos para iniciar el proyecto en conjunto; nos dividimos en subgrupos.
 Fecha de Inicio del proyecto: 05/08/2021.
 Día 1). Un grupo se encargó de buscar la informacion, formular las preguntas y las posibles respuestas, el otro de crear la landing page, la cual fue creada.
+
 Día 2). Se usó HTML5 y CSS3 para el formulario de login y registro (pensando en su posterior modificación con Django). Se crearon las paginas de conocer al equipo y de terminos y condiciones.
+
 Día 3). Nos volvímos a reunir para discutir acerca de por donde iniciar a usar Django, coincidimos en que empezaríamos por el Login y Registro, para luego seguir con el admin. Mockup definido.
+
 Día 4). Nueva Reunión. Participamos los 8 de la misma, iniciamos el proyecto Django. Login, registro y las bases de datos respectivas empiezan su desarrollo.(08/08/2021)
+
 Día 5). El desarrollo del login y Registro sigue su curso, mientras los que no están participando de esa app, siguen aprendiendo cómo hacer lo que sigue.
+
 Día 6). Tareas reasignadas, esencialmente nos dividimos en tres grupos, Login y Registro, Visual y Admin. 
        - Grupos: 
               - Login y Registro: se encargarán del formulario de registro así como del login, para hacerlo funcional.
               - Admin: se encargarán de poner las preguntas en una base de datos y de empezar a configurar el admin.
               - Visual: se encargan de mejorar el apartado visual de la página, esencialmente, así como la interfaz del usuario, para que sea mucho más
               agradable a la vista.
+              
 Día 7). Más avance en materia del Login y Registro, así como en Admin, llegando a sentar las bases para las preguntas y el multiple choice. Hoy nos volvemos a reunir para trabajar más intensamente en el Login y el Registro. Página generadora de links descubierta: https://developers.facebook.com/docs/plugins/share-button/?locale=es_ES. Replanteamos un poco la estratégia en cuanto a la BBDD. A partir de mañana cargaremos las preguntas y respuestas.             
 
 
