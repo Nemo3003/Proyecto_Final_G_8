@@ -1,0 +1,1 @@
+password = forms.CharField(label="Password", widget=forms.PasswordInput, strip=False)
