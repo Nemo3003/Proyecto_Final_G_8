@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>LOGIN TUTORIAL </title> 
+{% endblock title %}
+
+{% block content %}
+
+<h2> INICIAR SESIÓN </h2> 
+
+<form  method = "post"> 
+  
+    {% csrf_token%} 
+    
+    {{form.as_p}} <button type = "submit" > Iniciar sesión  </button> 
+
+</form>
+
+{% endblock content %}
+
+

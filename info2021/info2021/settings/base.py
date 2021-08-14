@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'aplicaciones.login_register',
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,7 @@ WSGI_APPLICATION = 'info2021.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'proyecto_lo_de_lali',
+        'NAME': 'info2021_proyecto',
         'USER': 'root',
         'PASSWORD': 'CarlosRudaz89',
         'HOST': 'localhost',
@@ -127,6 +128,8 @@ STATICFILES_DIR = (
     os.path.join(os.path.dirname(BASE_DIR), 'static'),
 )
 
+#STATIC_ROOT = 'templates/static/'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
 
@@ -135,3 +138,10 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+LOGIN_REDIRECT_URL  =  'home'
+LOGOUT_REDIRECT_URL  =  'home'
+
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = str(BASE_DIR.joinpath('sent_emails'))
