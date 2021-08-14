@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html> 
+
+<html > 
+    <head > 
+        <meta  charset = "utf-8" > 
+        
+        {% block title %}
+            <title >  Tutorial de autenticación de Django  </title > 
+        {% endblock %}
+        
+        <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+        
+        
+    </head > 
+
+    <body > 
+        <div style="text-align: right;"> <h3 style="border: cornsilk solid 3px; word-break: break-all; display:inline-flex; padding: 7px;"><a href="{% url 'home' %}"> INICIO </a></h3> </div>
+        <main > 
+            {% block content %} 
+            {% endblock %} 
+        </main> 
+        
+        <section style="position:fixed; bottom:0; right:0; ">holahola</section>
+        
+    </body> 
+</html> 
