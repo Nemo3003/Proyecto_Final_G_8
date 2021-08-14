@@ -26,6 +26,7 @@ Día 7). Más avance en materia del Login y Registro, así como en Admin, llegan
 Día 8). Avances en la BBDD fueron hechos, preguntas y respuestas cargadas. Login y Registro en proceso de finalización, algunos problemas encontrados.
 
 Día 9). Login y Admin finalizados, procedemos a iniciar a trabajar con el admin.
+
 Día 10). Algunos problemas en el login encontrados, pero resueltos. El admin site está a medio camino, el añadido de preguntas está listo.
 
 Esta página consiste en las siguientes partes:
