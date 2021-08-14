@@ -26,6 +26,7 @@ Día 7). Más avance en materia del Login y Registro, así como en Admin, llegan
 Día 8). Avances en la BBDD fueron hechos, preguntas y respuestas cargadas. Login y Registro en proceso de finalización, algunos problemas encontrados.
 
 Día 9). Login y Admin finalizados, procedemos a iniciar a trabajar con el admin.
+Día 10). Algunos problemas en el login encontrados, pero resueltos. El admin site está a medio camino, el añadido de preguntas está listo.
 
 Esta página consiste en las siguientes partes:
 
@@ -39,7 +40,8 @@ Esta página consiste en las siguientes partes:
     - Contiene el botón de registro o el de login (dependiendo de en cual formulario estés), además de contener un enlace a una página de "Términos y Condiciones" autogenerada de politicadeprivacidadplantilla.com
     - Contiene un botón que permite al usuario el regresar a la página anterior. 
  - Perfil de Admin:
-    -  Inicia con un un login, hecho en: HTML5, CSS3 y Django, incluyendo MySQL. 
+    -  Inicia con un un login, hecho en: HTML5, CSS3 y Django, incluyendo Mysql.
+    -  Contiene las opciones de agregar y eliminar usuarios, grupos, preguntas y respuestas.  
  - Perfil de Participante:
     - Inicia con un registro y un login, hecho en: HTML5, CSS3 y Django, incluyendo MySQL. 
  
@@ -59,4 +61,6 @@ Esta página consiste en las siguientes partes:
  Login y registro: Carlos Rudaz, Keith Magin Leonel Denysiuk, Mauricio Sosa;
  
  Base de datos: Ulises Mariano Melgarejo, Carlos Rudaz, Federico Asis;
+ 
+ Admin Site: Ulises Mariano Melgarejo, Carlos Rudaz;
  
