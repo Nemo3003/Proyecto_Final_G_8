@@ -29,6 +29,10 @@ Día 9). Login y Admin finalizados, procedemos a iniciar a trabajar con el admin
 
 Día 10). Algunos problemas en el login encontrados, pero resueltos. El admin site está a medio camino, el añadido de preguntas está listo.
 
+Día 11). Nos dedicamos a buscar cómo mejorar la carga de preguntas y respuestas.
+
+Día 12). Carga de preguntas y respuestas terminadas, faltan los templates y darle algunos retoques.
+
 Esta página consiste en las siguientes partes:
 
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales)
