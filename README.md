@@ -45,13 +45,13 @@ Esta página consiste en las siguientes partes:
     - Contiene el botón de registro o el de login (dependiendo de en cual formulario estés), además de contener un enlace a una página de "Términos y Condiciones" autogenerada de politicadeprivacidadplantilla.com
     - Contiene un botón que permite al usuario el regresar a la página anterior. 
  - Perfil de Admin:
-    -  Inicia con un un login, hecho en: HTML5, CSS3 y Django, incluyendo Mysql.
-    -  Contiene las opciones de agregar y eliminar usuarios, grupos, preguntas y respuestas.  
+    -  Inicia con un un login, hecho en: HTML5, CSS3 y Django.
+    -  Contiene las opciones de agregar y eliminar usuarios, grupos, preguntas y respuestas así como para contabilizar las respuestas correctas.  
  - Perfil de Participante:
-    - Inicia con un registro y un login, hecho en: HTML5, CSS3 y Django, incluyendo MySQL. 
+    - Inicia con un registro y un login, hecho en: HTML5, CSS3 y Django. 
  
  - Juego:
-    - Trae detrás MySQL y un buen trabajo de investigación realizado para conseguir las preguntas y las respuestas, las cuales fueron consultadas con todo el equipo. 
+    - Se inició gracias a un grupo dentro del nuestro que realizó un buen trabajo de investigación para conseguir las preguntas y las respuestas, las cuales fueron consultadas con todo el equipo. 
 
 
  Participación general:
@@ -69,3 +69,6 @@ Esta página consiste en las siguientes partes:
  
  Admin Site: Ulises Mariano Melgarejo, Carlos Rudaz;
  
+ 
+ 
+ Tecnologías utilizadas: HTML5, CSS3, DJANGO, SQLITE3
