@@ -33,6 +33,8 @@ Día 11). Nos dedicamos a buscar cómo mejorar la carga de preguntas y respuesta
 
 Día 12). Carga de preguntas y respuestas terminadas, faltan los templates y darle algunos retoques.
 
+Día 13). Hemos tenido avances en los templates de las preguntas y respuestas así como en los del login y registro.
+
 Esta página consiste en las siguientes partes:
 
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales)
@@ -52,6 +54,7 @@ Esta página consiste en las siguientes partes:
  
  - Juego:
     - Se inició gracias a un grupo dentro del nuestro que realizó un buen trabajo de investigación para conseguir las preguntas y las respuestas, las cuales fueron consultadas con todo el equipo. 
+    - Se trabajó con django y html principalmente, estuvimos trabajando bastante para conseguirlo. Cuenta con preguntas y respuestas en multiplechoice.
 
 
  Participación general:
