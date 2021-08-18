@@ -12,7 +12,7 @@ class Pregunta(models.Model):
 
     def __str__(self):
             if self.titulo==None:
-               return "No title found"
+                return "No title found"
             return self.titulo
 
 class Respuesta(models.Model):
@@ -27,12 +27,12 @@ class Respuesta(models.Model):
     def __str__(self):
         return self.titulo
 
-class Usuario(models.Model):
+class perfilUsuario(models.Model):
     usuario = models.OneToOneField(User, on_delete=models.CASCADE)
     puntaje_total = models.DecimalField(verbose_name="Puntaje total", default=0, decimal_places=2, max_digits=10)
 
 class Intentos_respuesta(models.Model):
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+    usuario = models.ForeignKey(perfilUsuario, on_delete=models.CASCADE)
     pregunta = models.ForeignKey(Pregunta, on_delete=models.CASCADE)
     respuesta = models.ForeignKey(Respuesta, on_delete=models.CASCADE, related_name="intentos")
     correcta = models.BooleanField(verbose_name = "¿Es la respuesta correcta?", default = False, null = False)
