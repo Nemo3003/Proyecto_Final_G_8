@@ -27,5 +27,3 @@ class Usuario(models.Model):
         verbose_name_plural = "Usuarios"
         ordening = ("nombres")    
 
-
-
