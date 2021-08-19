@@ -56,7 +56,7 @@ ROOT_URLCONF = 'info2021.urls'
 TEMPLATES = [
 {   
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS':  [os.path.join(os.path.dirname(BASE_DIR), 'templates')],
+    'DIRS':  [os.path.join(os.path.dirname(BASE_DIR), 'info2021/templates')],
     'APP_DIRS': True,
     'OPTIONS': {
         'context_processors': [

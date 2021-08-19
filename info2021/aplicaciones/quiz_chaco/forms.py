@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Pregunta, Respuesta, Intentos_respuesta
+from .models import Pregunta
 #Aquí creamos el formulario a partir del modelo
 class ElegirInlineFormset(forms.BaseInlineFormSet):
     def clean(self):

@@ -1,12 +1,12 @@
 from django.contrib import admin
-from .models import Pregunta, Respuesta, Intentos_respuesta, perfilUsuario
+from .models import Pregunta, ElegirRespuesta, PreguntasRespondidas, QuizUsuario
 from .forms import ElegirInlineFormset
 
 class RespuestaInline(admin.TabularInline):
-    model = Respuesta
+    model = ElegirRespuesta
     can_delete = False
-    max_num = Respuesta.maximo_elecciones
-    min_num = Respuesta.minimo_elecciones
+    max_num = ElegirRespuesta.maximo_elecciones
+    min_num = ElegirRespuesta.minimo_elecciones
     formset = ElegirInlineFormset
 
 class PreguntaAdmin(admin.ModelAdmin):
@@ -20,8 +20,8 @@ class Intentos_respuestaAdmin(admin.ModelAdmin):
     list_display = ["pregunta", "respuesta","correcta","puntaje"]
     
     class Meta:
-        model = Intentos_respuesta
+        model = PreguntasRespondidas
 admin.site.register(Pregunta, PreguntaAdmin)
-admin.site.register(Respuesta)
-admin.site.register(Intentos_respuesta)
-admin.site.register(perfilUsuario)
+admin.site.register(ElegirRespuesta)
+admin.site.register(PreguntasRespondidas)
+admin.site.register(QuizUsuario)

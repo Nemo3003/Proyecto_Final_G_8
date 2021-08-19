@@ -1,6 +1,8 @@
+from django.core.exceptions import ObjectDoesNotExist
+from django.http.response import Http404
 from django.shortcuts import render, redirect, HttpResponse
 
-from .models import perfilUsuario, Pregunta, Intentos_respuesta
+from .models import QuizUsuario, Pregunta, PreguntasRespondidas
 
 from django.template import loader  
 
@@ -16,25 +18,36 @@ def inicio(request):
 
 def jugar(request):
     #ESto crea un usuario en el "jugar"
-    quiz_usuario, created = perfilUsuario.objects.get_or_create(usuario=request.user)
+    QuizUser, created = QuizUsuario.objects.get_or_create(usuario=request.user)
     
     if request.method == 'POST':
         pregunta_pk = request.POST.get('pregunta_pk')
-        pregunta_respondida = quiz_usuario.intentos.select_related('pregunta').get(pregunta__pk = pregunta_pk)
+        pregunta_respondida = QuizUser.intentos.select_related('pregunta').filter(pregunta__pk = pregunta_pk)
         respuesta_pk = request.POST.get('respuesta_pk')
+        
+        try:
+            opcion_seleccionada = pregunta_respondida.pregunta.opciones.filter(pk=respuesta_pk)
+
+        except ObjectDoesNotExist:
+            return Http404
+        
+        QuizUser.validar_intento(pregunta_respondida, opcion_seleccionada)
+
+        return redirect(pregunta_respondida)
     else:
         #De esta manera si una pregunta es respondida correctamente, se la elimina. 
-        #Esto tiene la ventaja de que solo hay un intento permitido
+        #Esto tiene la ventaja de que se permite solo un intento
         #Flat: Se usa para regresar un queryset de valores unicos en lugar de una tupla
-        respondidas = Intentos_respuesta.objects.filter(Quiz_usuario=quiz_usuario).values_list('pregunta__pk', flat=True)
-        pregunta = Pregunta.objects.exclude(pk__in=respondidas)
-
+        pregunta = QuizUser.obtener_nuevas_preguntas()
+        if pregunta is not None:
+            QuizUser.crear_intentos(pregunta)
+        
         context = {
             'pregunta': pregunta
 
         }
 
-    return render(request, 'jugar.html', context)
+    return render(request, 'templates/jugar.html', context)
 
 def loginView(request):
-        return redirect('homeUsuario')
+        return redirect('home')
