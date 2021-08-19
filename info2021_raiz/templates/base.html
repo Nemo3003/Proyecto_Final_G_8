@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html> 
+
+<html > 
+    <head > 
+        <meta  charset = "utf-8" > 
+        
+        {% block title %}
+            <title >  Tutorial de autenticación de Django  </title > 
+        {% endblock %}
+        
+        <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+
+        {% block stylescss %}
+
+        {% endblock %}
+        
+        
+    </head > 
+
+    <body > 
+        <div style="position: fixed; 
+
+                    top: 0; 
+                    right: 0;
+                    background-color: darkgray; 
+                    border: black solid 3px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin-left: auto;
+                    margin-right: auto
+                    ">
+
+
+
+            <li style="display: table-header-group;
+                        text-align: center;"><a href="{% url 'home' %}"> INICIO </a></li>
+            <li style="display: table-header-group;
+                        text-align: center;">CONTACTO</li>
+            <li style="display: table-header-group;
+                        text-align: center;">CATEGORÍAS</li>
+            <li style="display: table-header-group;
+                        text-align: center;"> PERFILES</li>
+            <div style="display: table-header-group;"><input type="search" name="busca" id="busca" placeholder="Buscar..."></div>
+        </div>
+
+        <!--<div style="text-align: right;"> <h3 style="border: cornsilk solid 3px; word-break: break-all; display:inline-flex; padding: 7px;"><a href="{% url 'home' %}"> INICIO </a></h3> </div>
+        -->
+            <main > 
+            {% block content %} 
+            {% endblock %} 
+        </main> 
+        
+        <section style="position:fixed; bottom:0; right:0; "><a href="">INFO2021</a></section>
+        
+    </body> 
+</html> 
