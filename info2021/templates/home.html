@@ -1,0 +1,46 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %} 
+  <title>Inicio</title>  
+{% endblock %} 
+
+{% block content %} 
+
+{% if user.is_authenticated %} 
+  <div style="margin-top: 10%;">
+    <h1>Hola {{user.username}}!</h1> 
+    <p> <a href = "{% url 'logout' %}"> CERRAR SESIÓN </a></p> 
+  </div> 
+
+  <div style="display:inline-flexbox;
+              text-align: center;
+              background-color: blue;
+              position:absolute;
+              font-size: 120px;
+              /* bottom: 35%;
+              top: 35%;
+              left: 35%;
+              right: 35%; */
+              ">
+    <a href="{% url 'jugar' %}"> JUGAR </a>
+  </div>
+
+  <p><a href="{% url 'password_change' %}">CAMBIAR CONTRASEÑA</a></p>
+
+  
+  {% else %} 
+  <div style="margin-top: 10%;">
+    <h1>Usted no se ha identificado </p></h1> 
+    <br><br>
+    <h3><a href="{% url 'login' %}">INICIAR SESION</a></h3>
+    <h3><a href="{% url 'registrarse' %}">REGISTRARSE</a></h3>
+    <h3><a href="{% url 'password_reset' %}">OLVIDE MI CONTRASEÑA</a></h3>
+  </div>  
+ 
+
+{% endif%} 
+{% endblock %}
+
+
+
