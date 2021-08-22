@@ -1,6 +1,7 @@
 from django.db import models
 
 
+
 # Create your models here.
 
 class Usuario(models.Model):
@@ -26,4 +27,6 @@ class Usuario(models.Model):
         verbose_name = "Usuario"
         verbose_name_plural = "Usuarios"
         ordening = ("nombres")    
+
+
 

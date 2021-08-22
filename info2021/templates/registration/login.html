@@ -6,17 +6,24 @@
 {% endblock title %}
 
 {% block content %}
+<div style="border: brown solid 4px; 
+            background-color: hsla(100, 50, 150, .6); 
+            text-align: center;
+            position: absolute;
+            padding: 5%;
+            margin: 10% 40% auto 40%;">
+    <h2> INICIAR SESIÓN </h2> 
 
-<h2> INICIAR SESIÓN </h2> 
-
-<form  method = "post"> 
-  
-    {% csrf_token%} 
+    <form  method = "post"> 
     
-    {{form.as_p}} <button type = "submit" > Iniciar sesión  </button> 
+        {% csrf_token%} 
+        
+        {{form.as_p}} 
+        <button type = "submit" > Iniciar sesión  </button> 
+        <p><a href="{% url 'password_reset' %}">¿Olvidaste tu Contraseña?</a></p>
 
-</form>
-
+    </form>
+</div>
 {% endblock content %}
 
 

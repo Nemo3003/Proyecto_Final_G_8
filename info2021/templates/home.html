@@ -1,4 +1,4 @@
-{% extends 'templates/base.html' %} 
+{% extends 'base.html' %} 
 {% load static %}
 
 {% block title %} 
@@ -8,12 +8,14 @@
 {% block content %} 
 
 {% if user.is_authenticated %} 
-  <h1>Hola {{user.username}}!</h1> <p> <a href = "{% url 'logout' %}"> CERRAR SESIÓN </a></p> 
-{% else %} 
-<div>
+  <div style="margin-top: 10%;"><h1>Hola {{user.username}}!</h1> <p> <a href = "{% url 'logout' %}"> CERRAR SESIÓN </a></p> </div> 
+  <p><a href="{% url 'password_change' %}">Cambiar contraseña</a></p>
+  {% else %} 
+<div style="margin-top: 10%;">
   <h3>Usted no se ha identificado </p> <a href = "{% url 'login' %}"> INICIAR SESIÓN</a></h3> 
   <br><br>
-  <h3><a href="{% url 'signup' %}">REGISTRARSE</a></h3>
+  <h3><a href="{% url 'registrarse' %}">REGISTRARSE</a></h3>
+  <h3><a href="{% url 'password_reset' %}">OLVIDE MI CONTRASEÑA</a></h3>
   
 </div>  
  
