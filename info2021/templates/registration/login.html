@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
+
 {% load static %}
 
 {% block title %}
-    <title>LOGIN TUTORIAL </title> 
+    <title>LOGIN</title> 
 {% endblock title %}
 
 {% block content %}
@@ -11,19 +12,23 @@
             text-align: center;
             position: absolute;
             padding: 5%;
-            margin: 10% 40% auto 40%;">
+            margin: 15px 40% auto 40%;">
     <h2> INICIAR SESIÓN </h2> 
 
-    <form  method = "post"> 
-    
-        {% csrf_token%} 
+    <form  method = "post">     
+        {% csrf_token %} 
         
-        {{form.as_p}} 
+        {% if form.errors %}
+            <p>Your username and password didn't match. Please try again.</p>
+        {% endif %}
+
+        {{form.as_p}}
+         
         <button type = "submit" > Iniciar sesión  </button> 
-        <p><a href="{% url 'password_reset' %}">¿Olvidaste tu Contraseña?</a></p>
+        <p><a href="{% url 'password_reset' %}">¿Olvidaste tu clave?</a></p>
 
     </form>
 </div>
-{% endblock content %}
+{% endblock content %} 
 
 

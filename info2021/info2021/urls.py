@@ -25,8 +25,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('aplicaciones.login_register.urls')),
-    path('accounts/', include('django.contrib.auth.urls'), name="login"),
-    path('', TemplateView.as_view(template_name='home.html'), name="home"),
+    path('accounts/', include('django.contrib.auth.urls'), name="auth_django"),
+    path('', TemplateView.as_view(template_name='inicio.html'), name="home"),
     path('jugar/', include('aplicaciones.quiz_chaco.urls'))
 ]
 
