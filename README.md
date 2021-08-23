@@ -41,6 +41,10 @@ Día 15). Problemas con los templates html para mostrar las respuestas. Funciona
 
 Día 16). Preguntas son cargadas junto a las respuestas, tanto las preguntas como las respuestas se muestran. Se ven las estadísticas de los jugadores así como los resultados.
 
+Día 17). Nos reunimos para debatir qué era necesario para completar todo, algunos errores en el juego fueron corregidos por completo. Planes para agregar una barra de navegación (usando JavaScript) son discutidos. 
+
+Día 18). El proyecto está basicamente completo, solo nos falta el mostrar estadisticas y compartir los resultados. Hoy se juntaron el login/register y el juego para así estar completo. (22/08/2021)
+
 Esta página consiste en las siguientes partes:
 
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales)
@@ -59,12 +63,13 @@ Esta página consiste en las siguientes partes:
  - Perfil de Participante:
     - Pantalla de inicio con boton para iniciar.
     - Sigue con un registro y un login, hecho en: HTML5, CSS3 y Django. 
-    - 
+    - Una vez iniciado es redirigido a la pagina principal y luego de eso, el usuario puede jugar. 
  
  - Juego:
     - Se inició gracias a un grupo dentro del nuestro que realizó un buen trabajo de investigación para conseguir las preguntas y las respuestas, las cuales fueron consultadas con todo el equipo. 
     - Se trabajó con django y html principalmente, estuvimos trabajando bastante para conseguirlo. Cuenta con preguntas y respuestas en multiplechoice.
     - Tiene un máximo de 4 posibles respuestas, al finalizar te da la opción de consultar el tablero, el cual contiene tus resultados y los de los demás participantes.
+    - Consiste de cuantas preguntas el admin quiera poner, con un mínimo y máximo de 4 respuestas, al finalizar se le da al participante la oportunidad de ver su puntaje comparándolo con los demás jugadores. 
 
 
  Participación general:
@@ -82,8 +87,8 @@ Esta página consiste en las siguientes partes:
  
  Admin Site: Ulises Mariano Melgarejo, Carlos Rudaz;
  
- Parte backend y frontend de Preguntas y Respuestas: Ulises Mariano Melgarejo;
+ Parte backend y frontend de Preguntas y Respuestas: Ulises Mariano Melgarejo, Federico Asis;
  
  
  
- Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3
+ Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3, JavaScript
