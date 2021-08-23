@@ -2,7 +2,7 @@ from django.db import models
 from django.conf import settings
 from django import forms
 
-
+#Powered by Nemo with help from Google
 from django.contrib.auth.models import User
 
 import random
@@ -26,7 +26,7 @@ class ElegirRespuesta(models.Model):
 	correcta = models.BooleanField(verbose_name='¿Es esta la pregunta correcta?', default=False, null=False)
 	texto = models.TextField(verbose_name='Texto de la respuesta')
 
-
+#Powered by Nemo with help from Google
 	def __str__(self):
 		return self.texto
 
@@ -37,14 +37,14 @@ class QuizUsuario(models.Model):
 	def crear_intentos(self, pregunta):
 		intento = PreguntasRespondidas(pregunta=pregunta, quizUser=self)
 		intento.save()
-
+#Powered by Nemo with help from Google
 	def obtener_nuevas_preguntas(self):
 		respondidas = PreguntasRespondidas.objects.filter(quizUser=self).values_list('pregunta__pk', flat=True)
 		preguntas_restantes = Pregunta.objects.exclude(pk__in=respondidas)
 		if not preguntas_restantes.exists():
 			return None
 		return random.choice(preguntas_restantes)
-
+#Powered by Nemo with help from Google
 
 	def validar_intento(self, pregunta_respondida, respuesta_selecionada):
 		if pregunta_respondida.pregunta_id != respuesta_selecionada.pregunta_id:
@@ -60,7 +60,7 @@ class QuizUsuario(models.Model):
 			pregunta_respondida.respuesta = respuesta_selecionada
 
 		pregunta_respondida.save()
-
+#Powered by Nemo with help from Google
 		self.actualizar_puntaje()
 
 	def actualizar_puntaje(self):
@@ -77,6 +77,6 @@ class PreguntasRespondidas(models.Model):
 	correcta  = models.BooleanField(verbose_name='¿Es esta la respuesta correcta?', default=False, null=False)
 	puntaje_obtenido = models.DecimalField(verbose_name='Puntaje Obtenido', default=0, decimal_places=2, max_digits=6)
 
-
+#Powered by Nemo with help from Google
 
 
