@@ -12,7 +12,7 @@ from django.http import Http404
 
 
 
-
+#Powered by Nemo with help from Google
 def HomeUsuario(request):
 
 	return render(request, 'Usuario/home.html')
@@ -20,6 +20,7 @@ def HomeUsuario(request):
 def team(request):
 
 	return render(request, 'Team/index.html')
+#Powered by Nemo with help from Google
 
 def tablero(request):
 	total_usaurios_quiz = QuizUsuario.objects.order_by('-puntaje_total')[:10]
@@ -32,7 +33,7 @@ def tablero(request):
 	}
 
 	return render(request, 'play/tablero.html', context)  
-
+#Powered by Nemo with help from Google
 def jugar(request):
 
 	QuizUser, created = QuizUsuario.objects.get_or_create(usuario=request.user)
@@ -62,7 +63,7 @@ def jugar(request):
 
 	return render(request, 'play/jugar.html', context)
 
-
+#Powered by Nemo with help from Google
 
 def resultado_pregunta(request, pregunta_respondida_pk):
 	respondida = get_object_or_404(PreguntasRespondidas, pk=pregunta_respondida_pk)
@@ -81,7 +82,7 @@ def loginView(request):
 		usuario = authenticate(username=username, password=password)
 		login(request, usuario)
 		return redirect('HomeUsuario')
-
+#Powered by Nemo with help from Google
 	context = {
 		'form':form,
 		'titulo':titulo
@@ -108,9 +109,9 @@ def registro(request):
 	}
 
 	return render(request, 'Usuario/registro.html', context)
-
+#Powered by Nemo with help from Google
 
 def logout_vista(request):
 	logout(request)
 	return redirect('/')
-
+#Powered by Nemo with help from Google
