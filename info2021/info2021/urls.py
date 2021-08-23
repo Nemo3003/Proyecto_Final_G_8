@@ -25,6 +25,7 @@ urlpatterns = [
     path('accounts/', include('aplicaciones.login_register.urls')),
     path('accounts/', include('django.contrib.auth.urls'), name="login"),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('quiz/', include('aplicaciones.Quiz.urls')),
 ]
 
 

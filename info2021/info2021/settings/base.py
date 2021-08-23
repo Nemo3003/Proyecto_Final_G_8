@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'aplicaciones.login_register',
+    'aplicaciones.Quiz',
 ]
 
 MIDDLEWARE = [
@@ -76,12 +77,8 @@ WSGI_APPLICATION = 'info2021.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'info2021_proyecto',
-        'USER': 'root',
-        'PASSWORD': 'CarlosRudaz89',
-        'HOST': 'localhost',
-        'PORT': 3306,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 

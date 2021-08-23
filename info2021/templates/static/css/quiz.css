@@ -1,47 +1,4 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %} 
-  <title>Inicio</title>  
-{% endblock %} 
-
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aniversario Chaqueño</title>
-    <link rel="shortcut icon" href="css/favicon.ico">
-    <link rel="stylesheet" type = "text/css" href="css/normalize.css"/>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-  </head>
-
-{% block content %}
-
-  <body id="top"><div class="site-wrapper">
-   
-  <div class="site-wrapper-inner">
-    <div class="cover-container">
-      <div class="cabeza_maestra_clearfix">
-
-      </div>      
-      <div class="inner cover">
-        <a style = "display: block;text-align: right; color: #ddd; margin-right: 20%" href = "/admin" type="button"> Ir al Admin </a>
-        <h1 class="cover-heading">Iniciamos la aventura</h1>
-        <p class="lead cover-copy">Prepárate para comenzar, toma un respiro profundo y sumérgete en este juego y aprende nuevas cosas sobre la provincia del Chaco.</p>
-            {% if user.is_authenticated %}
-              <a href="quiz/jugar"><p class="lead-button"><button type="button" class="btn btn-lg btn-default btn-notify" data-toggle="modal" data-target="#subscribeModal">¡JUGAR!</button></p></a>
-            {% else %}
-              <a href="{% url 'login' %}"><p class="lead-button"><button type="button" class="btn btn-lg btn-default btn-notify" data-toggle="modal" data-target="#subscribeModal">¡INICIEMOS!</button></p></a> 
-            {% endif %}
-            
-              
-      </div>
-    </div>
-  </div>
-  <style>
-    
-    a,
+a,
 a:focus,
 a:hover {
   color: #fff; }
@@ -88,10 +45,7 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
-.admin-link{
-  text-align: center;
-  display: inline;
-}
+
 .inner {
   padding: 30px; }
 
@@ -112,7 +66,7 @@ body {
 
 .cover {
   padding: 0 20px;
-  background-image: url("static/css/cover.jpg");
+  background-image: url("cover.jpg");
    min-height: 100%;
    min-width: 1024px;
    background-size: cover;
@@ -230,10 +184,3 @@ body {
   .....   
   .   . 
   ..... */
-
-
-  </style>
-  </body>
-  
-</html>
-{% endblock %}
