@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 from django.contrib.auth import authenticate, get_user_model
 
-
+#Powered by Nemo with help from Google
 User = get_user_model()
 
 class ElegirInlineFormset(forms.BaseInlineFormSet):
@@ -25,7 +25,7 @@ class ElegirInlineFormset(forms.BaseInlineFormSet):
 			assert respuesta_correcta == Pregunta.NUMER_DE_RESPUESTAS_PERMITIDAS
 		except AssertionError:
 			raise forms.ValidationError('Exactamente una sola respuesta es permitida')
-
+#Powered by Nemo with help from Google
 
 class UsuarioLoginFormulario(forms.Form):
 	username = forms.CharField()
@@ -46,7 +46,7 @@ class UsuarioLoginFormulario(forms.Form):
 
 		return super(UsuarioLoginFormulario, self).clean(*args, **kwargs)
 
-
+#Powered by Nemo with help from Google
 
 class RegistroFormulario(UserCreationForm):
 	email = forms.EmailField(required=True)
@@ -67,4 +67,4 @@ class RegistroFormulario(UserCreationForm):
 
 		]
 
-
+#Powered by Nemo with help from Google
