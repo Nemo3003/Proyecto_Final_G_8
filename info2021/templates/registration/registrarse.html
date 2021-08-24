@@ -1,13 +1,36 @@
 {% extends 'base.html' %}
 {% load static %}
-
-{% block title %} <title> Registrarse </title> {% endblock %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %} <title>Registrarse</title> {% endblock %}
+</head>
+<body >
 
 {% block content %}
-  <h2>Registrarse</h2>
-  <form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" value="Registrarse">Registro</button>
-  </form>
+<div class="container">
+    <h2>Registrarse</h2>
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" value="Registrarse" class="btn-primary">Registrarse</button>
+    </form>
+  </div>
 {% endblock %}
+<style>
+  .container {
+    
+    text-align:center;
+    position: absolute;
+    padding: 5%;
+  }
+  .btn-primary {
+    border: 1px solid #333;
+  }
+</style>
+
+</body>
+</html>
