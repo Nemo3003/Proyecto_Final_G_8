@@ -6,12 +6,17 @@
 {% endblock title %}
 
 {% block content %}
+<body>
+    
+
 <div style="border: brown solid 4px; 
             background-color: hsla(100, 50, 150, .6); 
             text-align: center;
             position: absolute;
             padding: 5%;
-            margin: 10% 40% auto 40%;">
+            margin: 10% 40% auto 40%;
+            background: rgb(193,165,132);
+            background: radial-gradient(circle, rgba(193,165,132,1) 0%, rgba(172,123,132,1) 100%);">
     <h2> INICIAR SESIÓN </h2> 
 
     <form  method = "post"> 
@@ -25,6 +30,14 @@
 
     </form>
 </div>
+
+<style>
+    body{
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+</style>
+</body>
 {% endblock content %}
 
 

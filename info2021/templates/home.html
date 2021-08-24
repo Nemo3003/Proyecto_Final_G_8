@@ -28,7 +28,7 @@
       <div class="inner cover">
         <a style = "display: block;text-align: right; color: #ddd; margin-right: 20%" href = "/admin" type="button"> Ir al Admin </a>
         <h1 class="cover-heading">Iniciamos la aventura</h1>
-        <p class="lead cover-copy">Prepárate para comenzar, toma un respiro profundo y sumérgete en este juego y aprende nuevas cosas sobre la provincia del Chaco.</p>
+        <p class="lead cover-copy">Prepárate para comenzar, toma un respiro profundo, sumérgete en este juego y aprende nuevas cosas sobre la provincia del Chaco.</p>
             {% if user.is_authenticated %}
               <a href="quiz/jugar"><p class="lead-button"><button type="button" class="btn btn-lg btn-default btn-notify" data-toggle="modal" data-target="#subscribeModal">¡JUGAR!</button></p></a>
             {% else %}
@@ -112,15 +112,16 @@ body {
 
 .cover {
   padding: 0 20px;
-  background-image: url("static/css/cover.jpg");
-   min-height: 100%;
-   min-width: 1024px;
-   background-size: cover;
-   width: 100%;
-   height: auto;
-   position: fixed;
-   top: 0;
-   left: 0;}
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  min-height: 100%;
+  min-width: 1024px;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;}
 .cover:hover {filter: sepia(10%);}
 .cover .btn-notify {
   padding: 10px 60px;
