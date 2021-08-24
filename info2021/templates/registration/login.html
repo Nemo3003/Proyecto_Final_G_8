@@ -9,26 +9,21 @@
 <body>
     
 
-<div style="border: brown solid 4px; 
-            background-color: hsla(100, 50, 150, .6); 
-            text-align: center;
-            position: absolute;
-            padding: 5%;
-            margin: 10% 40% auto 40%;
-            background: rgb(193,165,132);
-            background: radial-gradient(circle, rgba(193,165,132,1) 0%, rgba(172,123,132,1) 100%);">
-    <h2> INICIAR SESIÓN </h2> 
+<div style="position:relative;">
+    <div class="container">
+        <h2 class="titulo-h2"> INICIAR SESIÓN </h2> 
 
-    <form  method = "post"> 
+            <form  method = "post"> 
     
-        {% csrf_token%} 
+            {% csrf_token%} 
         
-        {{form.as_p}} 
-        <button type = "submit" > Iniciar sesión  </button> 
-        <p><a href="{% url 'password_reset' %}">¿Olvidaste tu Contraseña?</a></p>
-        <p><a href="{% url 'registrarse' %}">Registrarse</a></p>
+            {{form.as_p}} 
+            <button type = "submit" > Iniciar sesión  </button> 
+            <p><a href="{% url 'password_reset' %}">¿Olvidaste tu Contraseña?</a></p>
+            <p><a href="{% url 'registrarse' %}">Registrarse</a></p>
 
-    </form>
+            </form>
+    </div>
 </div>
 
 <style>
@@ -36,6 +31,21 @@
         background: rgb(238,174,202);
         background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
+    .titulo-h2{
+        color:#333;
+        
+    }
+    .container{
+        border: 1px solid black;
+        width: 25%;
+        height: 25%;
+        margin-top: 100px;
+        background-image: linear-gradient(to right top, #88ac92, #8dad8a, #94ad82, #9ead79, #a9ac71);
+    }
+    button{
+        cursor: pointer;
+    }
+    
 </style>
 </body>
 {% endblock content %}
