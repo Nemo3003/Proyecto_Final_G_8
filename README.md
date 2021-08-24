@@ -45,6 +45,8 @@ Día 17). Nos reunimos para debatir qué era necesario para completar todo, algu
 
 Día 18). El proyecto está basicamente completo, solo nos falta el mostrar estadisticas y compartir los resultados. Hoy se juntaron el login/register y el juego para así estar completo. (22/08/2021)
 
+Día 19). Seguimos con el iniciar con la barra de navegación, estamos dando los estilos a las páginas y asegurandonos de tenerlo listo para entregar.
+
 Esta página consiste en las siguientes partes:
 
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales)
