@@ -79,11 +79,11 @@ Esta página consiste en las siguientes partes:
  
  Preguntas y Respuestas: Keith Magin Leonel Denysiuk, Mauricio Sosa;
  
- Diseño de la página: Ulises Mariano Melgarejo;
+ Diseño de la página: Ulises Mariano Melgarejo, Giuliano Conti;
  
  Inicialización de proyecto Django: Carlos Rudaz;
  
- Login y registro: Carlos Rudaz, Keith Magin Leonel Denysiuk, Mauricio Sosa;
+ Login y registro: Carlos Rudaz;
  
  Base de datos: Ulises Mariano Melgarejo, Carlos Rudaz, Federico Asis;
  
