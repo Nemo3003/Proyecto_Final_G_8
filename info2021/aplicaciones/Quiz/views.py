@@ -1,10 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
-from django.contrib.auth import authenticate, login, logout
-
-from .forms import RegistroFormulario, UsuarioLoginFormulario
-
-from .models import QuizUsuario, Pregunta, PreguntasRespondidas
+from .models import QuizUsuario, PreguntasRespondidas
 
 from django.core.exceptions import ObjectDoesNotExist
 

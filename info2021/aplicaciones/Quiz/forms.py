@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import  Pregunta, ElegirRespuesta, PreguntasRespondidas
+from .models import  Pregunta
 
 from django.contrib.auth.forms import UserCreationForm
 
