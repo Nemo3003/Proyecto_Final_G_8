@@ -40,9 +40,9 @@ class UsuarioLoginFormulario(forms.Form):
 			if not user:
 				raise forms.ValidationError("Este usuario No existe")
 			if not user.check_password(password):
-				raise forms.ValidationError("Incorrect Password")
+				raise forms.ValidationError("Contraseña incorrecta")
 			if not user.is_active:
-				raise forms.ValidationError("Este Usuario No esta activo")
+				raise forms.ValidationError("Este Usuario No está activo")
 
 		return super(UsuarioLoginFormulario, self).clean(*args, **kwargs)
 
