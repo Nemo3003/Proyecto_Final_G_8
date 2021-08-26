@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aplicaciones.login_register',
     'aplicaciones.Quiz',
+    'django_social_share',
 ]
 
 MIDDLEWARE = [
