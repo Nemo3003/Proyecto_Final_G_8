@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div style="background-color:rgba(0,0,0,0.8);
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;">
+
+        <h3 style="color:white;">Contáctanos</h3>
+
+        {% if "valido" in request.GET %}
+
+            <p style="color: white;"> Informacion enviada correctamente </p>
+
+        {% endif %}
+
+        {% if "novalido" in request.GET %}
+
+            <p style="color: white;"> No se pudo enviar el mensaje </p>
+
+        {% endif %}
+
+        <form action="" method="POST" style="text-align: left;">
+            {% csrf_token %} 
+            <table style="color: white; margin: 20px auto;">{{miFormulario.as_table}}</table>
+            <input type="submit" value="Enviar" style="width: 100%;">
+        </form>
+
+    </div>
+{% endblock %}
