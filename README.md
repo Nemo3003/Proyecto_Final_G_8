@@ -4,10 +4,17 @@ pip install -r requirements.txt;
 
 Esto instalará la librería de social_share. La alternativa es ejecutar: pip install django-social-share;
 
+Posible error: django.core.exceptions.ImproperlyConfigured: Cannot import 'contacto'. Check that 'aplicaciones.contacto.apps.ContactoConfig.name' is correct.
+
+Se arregla con: from django.apps import AppConfig
+AppConfig.default = False
+En el info2021/settings/base.py
+
 Una vez hecho todo esto, haz las migraciones.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 El proyecto final del grupo 8 de la comisión 6 del informatorio.
-
+--------------------------------------
 Nos reunimos el día siguiente a la formación de los grupos para organizarnos y prepararnos para iniciar el proyecto en conjunto; nos dividimos en subgrupos.
 Fecha de Inicio del proyecto: 05/08/2021.
 
@@ -55,7 +62,7 @@ Día 18). El proyecto está basicamente completo, solo nos falta el mostrar esta
 Día 19). Seguimos con el iniciar con la barra de navegación, estamos dando los estilos a las páginas y asegurandonos de tenerlo listo para entregar.
 
 Esta página consiste en las siguientes partes:
-
+----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales)
    y el link que une esta página con la página de presentación del equipo de desarrollo.
     - Contiene el boton que lleva al login y el registro.
@@ -82,11 +89,12 @@ Esta página consiste en las siguientes partes:
 
 
  Participación general:
+ ------------------
  Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti, Mauricio Sosa;
  
  Preguntas y Respuestas: Keith Magin Leonel Denysiuk, Mauricio Sosa;
  
- Diseño de la página: Ulises Mariano Melgarejo, Giuliano Conti;
+ Diseño de la página: Ulises Mariano Melgarejo, Giuliano Conti, Keith Magin Leonel Denysiuk;
  
  Inicialización de proyecto Django: Carlos Rudaz;
  
