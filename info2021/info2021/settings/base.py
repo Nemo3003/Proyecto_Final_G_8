@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'aplicaciones.login_register',
     'aplicaciones.Quiz',
     'django_social_share',
+    'aplicaciones.contacto',
 ]
 
 MIDDLEWARE = [
