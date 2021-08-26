@@ -1,4 +1,11 @@
 # Proyecto-Final
+-Instrucciones para que la aplicación funcione, es requerido que ejecutes el siguiente comando:
+pip install -r requirements.txt;
+
+Esto instalará la librería de social_share. La alternativa es ejecutar: pip install django-social-share;
+
+Una vez hecho todo esto, haz las migraciones.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 El proyecto final del grupo 8 de la comisión 6 del informatorio.
 
 Nos reunimos el día siguiente a la formación de los grupos para organizarnos y prepararnos para iniciar el proyecto en conjunto; nos dividimos en subgrupos.
