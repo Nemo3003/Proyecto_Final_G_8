@@ -31,16 +31,16 @@
 
 <div class="comp">
   <div class= "button btn-compartir" ><span><i class="bi bi-twitter"></i></span>
-	  {% post_to_twitter "New Song: {{object.title}}. Check it out!" object_or_url "Compartir en Twitter" %}
+	  {% post_to_twitter "Mira mi progreso en este juego: {{object.title}}. Check it out!" object_or_url "Compartir en Twitter" %}
   </div>
   <div class= "button purple btn-compartir" ><span><i class="bi bi-telegram"></i></span>
-	  {% post_to_telegram "New Song: {{object.title}}" object_or_url "Compartir con Telegram"%}
+	  {% post_to_telegram "Mira mi progreso en este juego: {{object.title}}" object_or_url "Compartir con Telegram"%}
   </div>
   <div class="button turquoise"><span><i class="bi bi-whatsapp"></i></span>
 	  {% post_to_whatsapp object_or_url "Compartir con WhatsApp" %}
   </div>
   <div class="button red"><span><i class="bi bi-google"></i></span>
-	  {% send_email object.title "New Song: {{object.title}}. Check it out!" object_or_url "Compartir con Gmail" %}
+	  {% send_email object.title "Mira mi progreso en este juego: {{object.title}}. Check it out!" object_or_url "Compartir con Gmail" %}
 </div>
 
 <style>
