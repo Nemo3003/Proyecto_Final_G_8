@@ -23,12 +23,39 @@
         {% else %}
             <a href="{% url 'home'  %}" style="color:white; margin-right:auto;">Inicio</a>
         {% endif %}
-        <a href="{% url 'Contacto'  %}" style="color:white; margin-right:auto;">Contacto</a>
     </nav>
 
-	{% block content %}
+	{% comment %} {% block content %} {% endcomment %}
 
-	{% endblock %}
+<div style="background-color:rgba(0,0,0,0.8);
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 10px;">
+
+        {% if "valido" in request.GET %}
+
+            <p style="color: white;"> Informacion enviada correctamente </p>
+
+        {% endif %}
+
+        {% if "novalido" in request.GET %}
+
+            <p style="color: white;"> No se pudo enviar el mensaje </p>
+
+        {% endif %}
+
+        <form action="" method="POST" style="text-align: center;">
+           <!-- Agrega campo oculto, donde esta un cod largo a modo de clave de forma aleatoria -->
+            {% csrf_token %} 
+            <table style="color: white; margin: 20px auto;">{{miFormulario.as_table}}</table>
+            <input type="submit" value="Enviar" style="width: 150px;">
+        </form>
+    
+    </div>
+
+
+	{% comment %} {% endblock %} {% endcomment %}
 
 <footer class="footer text-faded text-center py-5">
     <div class="container-button">
