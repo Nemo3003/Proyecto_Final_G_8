@@ -25,7 +25,11 @@
             <button class="darkModeSwitch" id="switch">
                 <span><i class="fa fa-sun-o"></i></span>   
                 <span><i class="fa fa-moon-o"></i></span>
-                <style>.darkModeSwitch{
+                <!--<style>
+                body.dark{
+                        background:  #5436;
+                    }
+                .darkModeSwitch{
                     background: #3494b1;
                     display:flex;
                     position: relative;
@@ -35,16 +39,16 @@
                     border-radius: 1rem;
                     align-items: center;
                     justify-content: space-between;
-                }</style>
-                <style>.darkModeSwitch span{
+                }
+                .darkModeSwitch span{
                     width:30px;
                     height:30px;
                     line-height:30px;
                     display:block;
                     color:#fff;
                     background: none;
-                }</style>
-                <style>.darkModeSwitch::after{
+                }
+                .darkModeSwitch::after{
                     display:block;
                     background: #fffbf5;
                     width: 2rem;
@@ -57,14 +61,15 @@
                     transition: all .5s ease;
                     box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
                     content: "";
-                }</style>
-                <style>.darkModeSwitch.active{
+                }
+                .darkModeSwitch.active{
                     background: #fdd384;
-                  }</style>
-                <style>.darkModeSwitch.active::after{
+                  }
+                .darkModeSwitch.active::after{
                     left:unset;
                     right:0;
-                  }</style>
+                  }
+                  </style>-->
                 
         {% else %}
             <a href="{% url 'home'  %}" style="color:white; margin-right:auto; width: 0px;">Inicio</a>
@@ -72,7 +77,7 @@
             <button class="darkModeSwitch" id="switch">
                 <span><i class="fa fa-sun-o"></i></span>   
                 <span><i class="fa fa-moon-o"></i></span>
-                <style>.darkModeSwitch{
+               <!-- <style>.darkModeSwitch{
                     background: #3494b1;
                     display:flex;
                     position: relative;
@@ -111,7 +116,7 @@
                 <style>.darkModeSwitch.active::after{
                     left:unset;
                     right:0;
-                  }</style>
+                  }</style>-->
                 
         {% endif %}
 
@@ -125,16 +130,19 @@
 
     <style>
         body{
-            background: rgb(238,174,202);
-            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
             background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("https://la.network/wp-content/uploads/2020/02/Chaco-Resistencia-ambiente.jpg");
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
         }
+        body.dark{
+            background-color: #333
+        }
+
         button{
             cursor: pointer;
         }
+       
         .footer{
             position: absolute;
             left: 0;
@@ -144,6 +152,51 @@
         }
         .btn-redes{
             color:#007bff
+        }
+        body.dark{
+            background:  #5436;
+        }
+        .darkModeSwitch{
+            background: #3494b1;
+            display:flex;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 1rem;
+            align-items: center;
+            justify-content: space-between;
+                }
+        .darkModeSwitch span{
+            width:30px;
+            height:30px;
+            line-height:30px;
+            display:block;
+            color:#fff;
+            background: none;
+            }
+        .darkModeSwitch::after{
+            display:block;
+            background: rgb(174,232,238);
+            background: radial-gradient(circle, rgba(174,232,238,1) 0%, rgba(233,148,231,1) 100%);
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            top:0;
+            left:0;
+            right:unset;
+            border-radius: 2rem;
+            transition: all .5s ease;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+            content: "";
+                }
+        .darkModeSwitch.active{
+            background: rgb(174,232,238);
+            background: radial-gradient(circle, rgba(174,232,238,1) 0%, rgba(233,148,231,1) 100%);
+                }
+        .darkModeSwitch.active::after{
+            left:unset;
+            right:0;
         }
     </style>
 </body>
