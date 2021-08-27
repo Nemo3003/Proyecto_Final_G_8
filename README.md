@@ -7,7 +7,9 @@ Esto instalará la librería de social_share. La alternativa es ejecutar: pip in
 Posible error: django.core.exceptions.ImproperlyConfigured: Cannot import 'contacto'. Check that 'aplicaciones.contacto.apps.ContactoConfig.name' is correct.
 
 Se arregla con: from django.apps import AppConfig
+
 AppConfig.default = False
+
 En el info2021/settings/base.py
 
 Una vez hecho todo esto, haz las migraciones.
