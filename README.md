@@ -76,9 +76,11 @@ Esta página consiste en las siguientes partes:
     - La Landing Page contiene el enlace a nuestra página de "conoce al equipo" en el fondo, en el link "Grupo 8 Informatorio" que se encuentra al lado de los
       botones de las redes sociales. 
     - La página principal(Landing page) así como la página de "conoce al equipo" fueron hechas con HTML5 y CSS3 (también algo de Bootstrap).
+    - En la esquina superior derecha tiene un botón que lleva al logueo del admin.
     
- - Login y Registro: Inicialmente fue hecho únicamente usando HTML5 y CSS3...
+ - Login y Registro: Fue hecho con HTML5, CSS3 y Django.
     - Contiene un botón que permite al usuario el regresar al inicio. 
+    - Permite al usuario el loguearse y/o registrarse para empezar el juego
      
  - Perfil de Admin:
     -  Inicia con un un login, hecho en: HTML5, CSS3 y Django.
@@ -116,7 +118,7 @@ Esta página consiste en las siguientes partes:
  
  Parte backend y frontend de Preguntas y Respuestas: Ulises Mariano Melgarejo, Federico Asis;
  
- Formulario Contactenos: Giuliano Conti.
+ Formulario Contáctenos: Giuliano Conti.
  
  
  Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3
