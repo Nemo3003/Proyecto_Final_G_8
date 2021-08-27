@@ -61,6 +61,12 @@ Día 18). El proyecto está basicamente completo, solo nos falta el mostrar esta
 
 Día 19). Seguimos con el iniciar con la barra de navegación, estamos dando los estilos a las páginas y asegurandonos de tenerlo listo para entregar.
 
+Día 20). Algunas mejoras aplicadas a la página.
+
+Día 21). La aplicacion "contacto" fue creada, posibilitando una mejor gestión del contacto. Botón de compartir resultados fue implementado.
+
+Día 22). Probamos que en los que están participando el proyecto funcione correctamente.
+
 Esta página consiste en las siguientes partes:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales)
@@ -106,6 +112,7 @@ Esta página consiste en las siguientes partes:
  
  Parte backend y frontend de Preguntas y Respuestas: Ulises Mariano Melgarejo, Federico Asis;
  
+ Formulario Contactenos: Giuliano Conti.
  
  
  Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3, JavaScript
