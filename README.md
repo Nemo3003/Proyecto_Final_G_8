@@ -7,7 +7,9 @@ Esto instalará la librería de social_share. La alternativa es ejecutar: pip in
 Posible error: django.core.exceptions.ImproperlyConfigured: Cannot import 'contacto'. Check that 'aplicaciones.contacto.apps.ContactoConfig.name' is correct.
 
 Se arregla con: from django.apps import AppConfig
+
 AppConfig.default = False
+
 En el info2021/settings/base.py
 
 Una vez hecho todo esto, haz las migraciones.
@@ -61,21 +63,30 @@ Día 18). El proyecto está basicamente completo, solo nos falta el mostrar esta
 
 Día 19). Seguimos con el iniciar con la barra de navegación, estamos dando los estilos a las páginas y asegurandonos de tenerlo listo para entregar.
 
+Día 20). Algunas mejoras aplicadas a la página.
+
+Día 21). La aplicacion "contacto" fue creada, posibilitando una mejor gestión del contacto. Botón de compartir resultados fue implementado.
+
+Día 22). Probamos que en los que están participando el proyecto funcione correctamente. Corregimos algunos errores que surgían en algunos aspectos.
+
 Esta página consiste en las siguientes partes:
 ----------------------------
- - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales)
-   y el link que une esta página con la página de presentación del equipo de desarrollo.
+ - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
     - Contiene el boton que lleva al login y el registro.
     - La Landing Page contiene el enlace a nuestra página de "conoce al equipo" en el fondo, en el link "Grupo 8 Informatorio" que se encuentra al lado de los
       botones de las redes sociales. 
-    - La página principal(Landing page) así como la página de "conoce al equipo" fueron hechas con HTML5 y CSS3. Ningún framework de CSS3 fue utilizado.
- - Login y Registro: Inicialmente fue hecho únicamente usando HTML5 y CSS3...
-    - Contiene el botón de registro o el de login (dependiendo de en cual formulario estés), además de contener un enlace a una página de "Términos y Condiciones" autogenerada de politicadeprivacidadplantilla.com
-    - Contiene un botón que permite al usuario el regresar a la página anterior. 
+    - La página principal(Landing page) así como la página de "conoce al equipo" fueron hechas con HTML5 y CSS3 (también algo de Bootstrap).
+    - En la esquina superior derecha tiene un botón que lleva al logueo del admin.
+    
+ - Login y Registro: Fue hecho con HTML5, CSS3 y Django.
+    - Contiene un botón que permite al usuario el regresar al inicio. 
+    - Permite al usuario el loguearse y/o registrarse para empezar el juego
+     
  - Perfil de Admin:
     -  Inicia con un un login, hecho en: HTML5, CSS3 y Django.
     -  Contiene las opciones de agregar y eliminar usuarios, grupos, preguntas y respuestas así como para contabilizar las respuestas correctas.  
     -  Registra los intentos y permite colocar el puntaje máximo por pregunta respondida correctamente.
+    
  - Perfil de Participante:
     - Pantalla de inicio con boton para iniciar.
     - Sigue con un registro y un login, hecho en: HTML5, CSS3 y Django. 
@@ -86,6 +97,7 @@ Esta página consiste en las siguientes partes:
     - Se trabajó con django y html principalmente, estuvimos trabajando bastante para conseguirlo. Cuenta con preguntas y respuestas en multiplechoice.
     - Tiene un máximo de 4 posibles respuestas, al finalizar te da la opción de consultar el tablero, el cual contiene tus resultados y los de los demás participantes.
     - Consiste de cuantas preguntas el admin quiera poner, con un mínimo y máximo de 4 respuestas, al finalizar se le da al participante la oportunidad de ver su puntaje comparándolo con los demás jugadores. 
+    - Al terminar el juego, el usuario puede ver sus resultados comparados a los de otros jugadores y (si lo desea) puede compartir estos resultados por correo o en algunas redes sociales.
 
 
  Participación general:
@@ -106,6 +118,7 @@ Esta página consiste en las siguientes partes:
  
  Parte backend y frontend de Preguntas y Respuestas: Ulises Mariano Melgarejo, Federico Asis;
  
+ Formulario Contáctenos: Giuliano Conti.
  
  
- Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3, JavaScript
+ Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3
