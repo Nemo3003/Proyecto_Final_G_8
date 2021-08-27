@@ -67,23 +67,24 @@ Día 20). Algunas mejoras aplicadas a la página.
 
 Día 21). La aplicacion "contacto" fue creada, posibilitando una mejor gestión del contacto. Botón de compartir resultados fue implementado.
 
-Día 22). Probamos que en los que están participando el proyecto funcione correctamente.
+Día 22). Probamos que en los que están participando el proyecto funcione correctamente. Corregimos algunos errores que surgían en algunos aspectos.
 
 Esta página consiste en las siguientes partes:
 ----------------------------
- - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales)
-   y el link que une esta página con la página de presentación del equipo de desarrollo.
+ - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
     - Contiene el boton que lleva al login y el registro.
     - La Landing Page contiene el enlace a nuestra página de "conoce al equipo" en el fondo, en el link "Grupo 8 Informatorio" que se encuentra al lado de los
       botones de las redes sociales. 
-    - La página principal(Landing page) así como la página de "conoce al equipo" fueron hechas con HTML5 y CSS3. Ningún framework de CSS3 fue utilizado.
+    - La página principal(Landing page) así como la página de "conoce al equipo" fueron hechas con HTML5 y CSS3 (también algo de Bootstrap).
+    
  - Login y Registro: Inicialmente fue hecho únicamente usando HTML5 y CSS3...
-    - Contiene el botón de registro o el de login (dependiendo de en cual formulario estés), además de contener un enlace a una página de "Términos y Condiciones" autogenerada de politicadeprivacidadplantilla.com
-    - Contiene un botón que permite al usuario el regresar a la página anterior. 
+    - Contiene un botón que permite al usuario el regresar al inicio. 
+     
  - Perfil de Admin:
     -  Inicia con un un login, hecho en: HTML5, CSS3 y Django.
     -  Contiene las opciones de agregar y eliminar usuarios, grupos, preguntas y respuestas así como para contabilizar las respuestas correctas.  
     -  Registra los intentos y permite colocar el puntaje máximo por pregunta respondida correctamente.
+    
  - Perfil de Participante:
     - Pantalla de inicio con boton para iniciar.
     - Sigue con un registro y un login, hecho en: HTML5, CSS3 y Django. 
@@ -94,6 +95,7 @@ Esta página consiste en las siguientes partes:
     - Se trabajó con django y html principalmente, estuvimos trabajando bastante para conseguirlo. Cuenta con preguntas y respuestas en multiplechoice.
     - Tiene un máximo de 4 posibles respuestas, al finalizar te da la opción de consultar el tablero, el cual contiene tus resultados y los de los demás participantes.
     - Consiste de cuantas preguntas el admin quiera poner, con un mínimo y máximo de 4 respuestas, al finalizar se le da al participante la oportunidad de ver su puntaje comparándolo con los demás jugadores. 
+    - Al terminar el juego, el usuario puede ver sus resultados comparados a los de otros jugadores y (si lo desea) puede compartir estos resultados por correo o en algunas redes sociales.
 
 
  Participación general:
@@ -117,4 +119,4 @@ Esta página consiste en las siguientes partes:
  Formulario Contactenos: Giuliano Conti.
  
  
- Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3, JavaScript
+ Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3
