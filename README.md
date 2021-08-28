@@ -75,14 +75,13 @@ Esta página consiste en las siguientes partes:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
     - Contiene el boton que lleva al login y el registro.
-    - La Landing Page contiene el enlace a nuestra página de "conoce al equipo" en el fondo, en el link "Grupo 8 Informatorio" que se encuentra al lado de los
-      botones de las redes sociales. 
-    - La página principal(Landing page) así como la página de "conoce al equipo" fueron hechas con HTML5 y CSS3 (también algo de Bootstrap).
     - En la esquina superior derecha tiene un botón que lleva al logueo del admin.
+    - Contiene los botones a las redes sociales de EmpleoChaco.
+    - Contiene un "Contactanos" funcional.
     
  - Login y Registro: Fue hecho con HTML5, CSS3 y Django.
     - Contiene un botón que permite al usuario el regresar al inicio. 
-    - Permite al usuario el loguearse y/o registrarse para empezar el juego
+    - Permite al usuario el loguearse y/o registrarse para empezar el juego.
      
  - Perfil de Admin:
     -  Inicia con un un login, hecho en: HTML5, CSS3 y Django.
@@ -104,23 +103,25 @@ Esta página consiste en las siguientes partes:
 
  Participación general:
  ------------------
- Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti, Mauricio Sosa;
+ Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti, Mauricio Sosa.
  
- Preguntas y Respuestas: Keith Magin Leonel Denysiuk, Mauricio Sosa;
+ Preguntas y Respuestas: Keith Magin Leonel Denysiuk, Mauricio Sosa.
  
- Diseño de la página: Ulises Mariano Melgarejo, Giuliano Conti, Keith Magin Leonel Denysiuk;
+ Diseño de la página: Ulises Mariano Melgarejo, Giuliano Conti, Keith Magin Leonel Denysiuk, Federico Asis.
  
- Inicialización de proyecto Django: Carlos Rudaz;
+ Inicialización de proyecto Django: Carlos Rudaz.
  
- Login y registro: Carlos Rudaz;
+ Login y registro: Carlos Rudaz.
  
- Base de datos: Ulises Mariano Melgarejo, Carlos Rudaz, Federico Asis;
+ Base de datos: Ulises Mariano Melgarejo, Carlos Rudaz, Federico Asis.
  
- Admin Site: Ulises Mariano Melgarejo, Carlos Rudaz;
+ Admin Site: Ulises Mariano Melgarejo, Carlos Rudaz.
  
- Parte backend y frontend de Preguntas y Respuestas: Ulises Mariano Melgarejo, Federico Asis;
+ Parte backend y frontend de Preguntas y Respuestas: Ulises Mariano Melgarejo, Federico Asis.
  
  Formulario Contáctenos: Giuliano Conti.
+ 
+ Botón de compartir resultados: Federico Asis.
  
  
  Tecnologías utilizadas: HTML5, CSS3, Bootstrap, JavaScript, DJANGO, SQLITE3
