@@ -69,6 +69,8 @@ Día 21). La aplicacion "contacto" fue creada, posibilitando una mejor gestión 
 
 Día 22). Probamos que en los que están participando el proyecto funcione correctamente. Corregimos algunos errores que surgían en algunos aspectos.
 
+Día 23). Botón de modo nocturno implementado.
+
 Esta página consiste en las siguientes partes:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
@@ -121,4 +123,4 @@ Esta página consiste en las siguientes partes:
  Formulario Contáctenos: Giuliano Conti.
  
  
- Tecnologías utilizadas: HTML5, CSS3, Bootstrap, DJANGO, SQLITE3
+ Tecnologías utilizadas: HTML5, CSS3, Bootstrap, JavaScript, DJANGO, SQLITE3
