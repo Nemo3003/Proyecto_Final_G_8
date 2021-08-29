@@ -3,7 +3,7 @@
 ```bash
 pip install -r requirements.txt
 ```
-Esto instalará la librería de social_share. La alternativa es ejecutar:
+Esto instalará la librería de social_share. La alternativa es ejecutar el siguiente comando en el ambiente:
 
 ```bash
 pip install django-social-share
