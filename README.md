@@ -124,4 +124,6 @@ Esta página consiste en las siguientes partes:
  Botón de compartir resultados: Federico Asis.
  
  
- Tecnologías utilizadas: HTML5, CSS3, Bootstrap, JavaScript, DJANGO, SQLITE3
+ Tecnologías utilizadas
+ ----------------------
+ HTML5, CSS3, Bootstrap, JavaScript, DJANGO, SQLITE3
