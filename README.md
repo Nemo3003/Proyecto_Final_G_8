@@ -1,11 +1,13 @@
 # Proyecto-Final
 -Instrucciones para que la aplicación funcione, es requerido que ejecutes el siguiente comando:
-
-### pip install -r requirements.txt;
-
+```bash
+pip install -r requirements.txt;
+```
 Esto instalará la librería de social_share. La alternativa es ejecutar:
 
-### pip install django-social-share;
+```bash
+pip install django-social-share;
+```
 
 Posible error: django.core.exceptions.ImproperlyConfigured: Cannot import 'contacto'. Check that 'aplicaciones.contacto.apps.ContactoConfig.name' is correct.
 
