@@ -112,7 +112,7 @@ Esta página consiste en las siguientes partes:
 
  Participación general:
  ------------------
- Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti, Mauricio Sosa.
+ Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti, Mauricio Sosa, Juan Carlos Vega.
  
  Preguntas y Respuestas: Keith Magin Leonel Denysiuk, Mauricio Sosa.
  
@@ -131,6 +131,8 @@ Esta página consiste en las siguientes partes:
  Formulario Contáctenos: Giuliano Conti.
  
  Botón de compartir resultados: Federico Asis.
+ 
+ Creación de las redes sociales del grupo: Juan Carlos Vega.
  
  
  Tecnologías utilizadas
