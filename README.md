@@ -76,6 +76,10 @@ Día 22). Probamos que en los que están participando el proyecto funcione corre
 
 Día 23). Botón de modo nocturno implementado.
 
+Día 24). Página es evaluada y vemos qué cosas faltan.
+
+Día 25). El archivo Excel para cargar preguntas es puesto en el repositorio. Las páginas del grupo son cargadas y el login recibe unos retoques.
+
 Esta página consiste en las siguientes partes:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
