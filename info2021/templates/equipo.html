@@ -6,13 +6,104 @@
 {% endblock %} 
 
 {% block content %} 
+<h1 style="color: white; margin: 0 10% 0 25%; padding: 0 0 0 10%;">Nuestro Equipo De Desarrollo</h1>
+ 
+ <!-- DESDE ACÁ IRÍA EL IF-->
+ {% for int in integrantes %}
+<div style="border: 3px solid white; color: white; width: 400px; padding: 1%; margin: 1%; position:initial; display: inline-block; align-items:flex-start;" class="container">
+
+  <div>
+
+    <div>
+      <div>
+        <div class="avatar"> <img src="{{int.imagen.url}}" alt="our_team"> </div>
+        <p class="m-0">
+	        <a href=" {{int.twitter}} " class="link btn-redes">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	        <a href="{{int.facebook}}" class="link btn-redes">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	        <a href="{{int.instagram}}" class="link btn-redes">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	    </p>
+        
+      </div>
+      <h3> {{int.id_usuario.first_name}}, {{int.id_usuario.last_name}} </h3>
+      <span style="font-size: x-large;"> Función: <strong>{{int.funcion}}</strong> </span>
+      <p> {{int.descripcion_personal}} </p>
+      <span style="font-size: x-small; margin-top: 2px;"> Última conexión: {{int.id_usuario.last_login}} </span>
+
+    </div>
+
+  </div>
+</div>
+{% endfor %}
+<!-- HASTA ACÁ IRÍA EL IF-->
 
 
-{% if user.is_authenticated %} 
-  
-{% else %} 
+<style>
+.avatar img {
+    position: relative;
+    top: -15px; /* ajustar los valores para mover la imagen */
+    left: -5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 5%;
+    /* border:2px solid #fff; */
+    display: block;
+}
 
-{% endif%} 
 
 
+
+
+
+
+
+
+
+
+
+  *{box-sizing:border-box;}
+
+.container{
+  width:95%;
+  max-width:900px;
+  padding:32px 64px;
+  margin:auto;
+}
+
+.social{
+  /*las imágenes usadas tienen width de 48px*/
+  width:48px;
+  position:relative;
+  top:0;
+  right:0;
+}
+
+/* Extra centrado vertical*/
+
+.social{
+  /*border:1px solid #000;*/
+  top:50%;
+  height:205px;
+  /*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+  margin-top:-100px;
+}
+</style>
 {% endblock %}
+
+
+

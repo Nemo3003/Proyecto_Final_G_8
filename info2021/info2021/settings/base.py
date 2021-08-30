@@ -156,3 +156,6 @@ EMAIL_HOST_USER="gruponro8.info@gmail.com"
 EMAIL_HOST_PASSWORD="info123456"
 
 AppConfig.default = False
+
+# PARA QUE USE NUESTRO MODELS User DONDE CAMBIAMOS LAST_NAME Y FIRST_NAME
+# AUTH_USER_MODEL = 'login_register.User'

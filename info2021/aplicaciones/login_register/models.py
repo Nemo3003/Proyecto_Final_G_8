@@ -1,32 +1,24 @@
 from django.db import models
-
-
+from django.contrib.auth.models import User
 
 # Create your models here.
 
-class Usuario(models.Model):
-    id_usuario = models.AutoField (primary_key=True)
-    nombres = models.CharField(max_length=35)
-    apellidos = models.CharField(max_length=35)
-    usuario = models.CharField("usuario", max_length=25, null=False, blank=False)
-    contraseña = models.CharField("contraseña", max_length=12, blank=False, null= False)
-    creado = models.DateField("creado", auto_now= False ,auto_now_add=True)
-    email = models.EmailField("email", blank=False, null=False)
-    estado = models.BooleanField("estado", default=True)
-    
+class Equipo(models.Model):
+    id_usuario = models.ForeignKey (User, on_delete=models.CASCADE)
+    descripcion_personal = models.TextField(max_length=500, blank=False, null=False)
+    imagen = models.ImageField(upload_to='login_register')
+    funcion = models.CharField(max_length=100, blank=False, null=False)
+    facebook = models.URLField()
+    instagram = models.URLField()
+    twitter = models.URLField()
+
     def __str__(self):
-        if self.estado:
-            y = "ACTIVO"
-        else:
-            y = "INACTIVO"
-        
-        x = f"{self.usuario} ---> {y}"
-        return  x
+        x = self.id_usuario.username
+        return x
 
     class META:
-        verbose_name = "Usuario"
-        verbose_name_plural = "Usuarios"
-        ordening = ("nombres")    
+        verbose_name = "Equipo"
+        verbose_name_plural = "Equipos"    
 
 
 
