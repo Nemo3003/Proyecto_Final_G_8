@@ -82,6 +82,8 @@ Día 24). Página es evaluada y vemos qué cosas faltan.
 
 Día 25). El archivo Excel para cargar preguntas es puesto en el repositorio. Las páginas del grupo son cargadas y el login recibe unos retoques.
 
+Día 26). Encontramos las librerias necesarias para realizar los últimos cambios, tales como los de añadir estadísticas al admin.
+
 Esta página consiste en las siguientes partes:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
