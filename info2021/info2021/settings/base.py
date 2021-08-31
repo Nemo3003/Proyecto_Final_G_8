@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django_social_share',
     'aplicaciones.contacto',
     'django_nvd3',
-    'djangobower',
 ]
 
 MIDDLEWARE = [
