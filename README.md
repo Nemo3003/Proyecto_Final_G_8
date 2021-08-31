@@ -9,6 +9,12 @@ Esto instalará la librería de social_share. La alternativa es ejecutar el sigu
 pip install django-social-share
 ```
 
+Esto instalará django-admin-tools:
+
+```bash
+pip install django-admin-tools
+```
+
 Por favor, visitar https://github.com/areski/django-admin-tools-stats en caso de que no funcione. Instala lo que ahí está.
 
 Posible error: django.core.exceptions.ImproperlyConfigured: Cannot import 'contacto'. Check that 'aplicaciones.contacto.apps.ContactoConfig.name' is correct.
