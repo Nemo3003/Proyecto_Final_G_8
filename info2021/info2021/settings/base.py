@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_tools_stats', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +43,8 @@ INSTALLED_APPS = [
     'aplicaciones.Quiz',
     'django_social_share',
     'aplicaciones.contacto',
+    'django_nvd3',
+    'djangobower',
 ]
 
 MIDDLEWARE = [
@@ -126,6 +129,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIR = (
     os.path.join(os.path.dirname(BASE_DIR), 'static'),
+    'djangobower.finders.BowerFinder'
 )
 
 #STATIC_ROOT = 'templates/static/'
@@ -154,5 +158,21 @@ EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST_USER="gruponro8.info@gmail.com"
 EMAIL_HOST_PASSWORD="info123456"
+
+ADMIN_CHARTS_NVD3_JS_PATH = 'bow/nvd3/build/nv.d3.js'
+ADMIN_CHARTS_NVD3_CSS_PATH = 'bow/nvd3/build/nv.d3.css'
+ADMIN_CHARTS_D3_JS_PATH = 'bow/d3/d3.js'
+
+BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
+
+
+BOWER_INSTALLED_APPS = (
+     'admin_tools_stats',
+     'django_nvd3',
+)
+
+BOWER_PATH = os.path.normpath('C:/Users/nemo/AppData/Roaming/npm/bower.cmd')
+
+
 
 AppConfig.default = False
