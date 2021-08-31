@@ -3,17 +3,6 @@
 ```bash
 pip install -r requirements.txt
 ```
-Esto instalará la librería de social_share. La alternativa es ejecutar el siguiente comando en el ambiente:
-
-```bash
-pip install django-social-share
-```
-
-Esto instalará django-admin-tools:
-
-```bash
-pip install django-admin-tools
-```
 
 Por favor, visitar https://github.com/areski/django-admin-tools-stats en caso de que no funcione. Instala lo que ahí está.
 
