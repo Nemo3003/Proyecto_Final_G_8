@@ -1,8 +1,10 @@
 # Proyecto-Final
 -Instrucciones para que la aplicación funcione, es requerido que ejecutes el siguiente comando:
-pip install -r requirements.txt;
+```bash
+pip install -r requirements.txt
+```
 
-Esto instalará la librería de social_share. La alternativa es ejecutar: pip install django-social-share;
+Por favor, visitar https://github.com/areski/django-admin-tools-stats en caso de que no funcione. Instala lo que ahí está.
 
 Posible error: django.core.exceptions.ImproperlyConfigured: Cannot import 'contacto'. Check that 'aplicaciones.contacto.apps.ContactoConfig.name' is correct.
 
@@ -71,6 +73,12 @@ Día 22). Probamos que en los que están participando el proyecto funcione corre
 
 Día 23). Botón de modo nocturno implementado.
 
+Día 24). Página es evaluada y vemos qué cosas faltan.
+
+Día 25). El archivo Excel para cargar preguntas es puesto en el repositorio. Las páginas del grupo son cargadas y el login recibe unos retoques.
+
+Día 26). Encontramos las librerias necesarias para realizar los últimos cambios, tales como los de añadir estadísticas al admin.
+
 Esta página consiste en las siguientes partes:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
@@ -103,7 +111,7 @@ Esta página consiste en las siguientes partes:
 
  Participación general:
  ------------------
- Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti, Mauricio Sosa.
+ Mockup: Federico Asis, Ulises Mariano Melgarejo, Carlos Rudaz, Keith Magin Leonel Denysiuk, Giuliano Conti, Mauricio Sosa, Juan Carlos Vega.
  
  Preguntas y Respuestas: Keith Magin Leonel Denysiuk, Mauricio Sosa.
  
@@ -123,5 +131,9 @@ Esta página consiste en las siguientes partes:
  
  Botón de compartir resultados: Federico Asis.
  
+ Creación de las redes sociales del grupo: Juan Carlos Vega.
  
- Tecnologías utilizadas: HTML5, CSS3, Bootstrap, JavaScript, DJANGO, SQLITE3
+ 
+ Tecnologías utilizadas
+ ----------------------
+ HTML5, CSS3, Bootstrap, JavaScript, DJANGO, SQLITE3
