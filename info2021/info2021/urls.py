@@ -27,7 +27,6 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('quiz/', include('aplicaciones.Quiz.urls')),
     path('contacto/', include('aplicaciones.contacto.urls')),
-    path('admin_tools_stats/', include('admin_tools_stats.urls')),
 ]
 
 
