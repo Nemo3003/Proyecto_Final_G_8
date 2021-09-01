@@ -6,18 +6,17 @@
 {% endblock %} 
 
 {% block content %} 
-<h1 style="color: white; margin: 0 10% 0 25%; padding: 0 0 0 10%;">Nuestro Equipo De Desarrollo</h1>
- 
+<h1 style="color: white; margin: 0 10% 3% 25%;">Nuestro Equipo De Desarrollo</h1>
+
+<div style="margin-top: 150px;">
  <!-- DESDE ACÁ IRÍA EL IF-->
  {% for int in integrantes %}
-<div style="border: 3px solid white; color: white; width: 350px; padding: 1%; margin: 5px; position:initial; display: inline-block; align-items:flex-start;" class="container">
-
+<div class="form-register" style="border: 1px solid white;">
   <div>
-
     <div>
       <div>
         <div class="avatar"> <img src="{{int.imagen.url}}" alt="our_team"> </div>
-        <p class="m-0">
+        <p>
 	        <a href=" {{int.twitter}} " class="link btn-redes">
 	          <span class="fa-stack fa-lg">
 	            <i class="fa fa-circle fa-stack-2x"></i>
@@ -36,23 +35,23 @@
 	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
 	          </span>
 	        </a>
-	    </p>
-        
-      </div>
-      <h3> {{int.id_usuario.first_name}}, {{int.id_usuario.last_name}} </h3>
-      <span style="font-size: x-large;"> Función: <strong>{{int.funcion}}</strong> </span>
+	    </p> 
+    </div>
+      <h1 style="border-bottom: 2px solid white;">{{int.id_usuario.first_name.capitalize}}, {{int.id_usuario.last_name.capitalize}} </h1>
+      <h3 style="margin-top: -10px;"> Función: <strong>{{int.funcion}}</strong> </h3>
       <p> {{int.descripcion_personal}} </p>
       <span style="font-size: x-small; margin-top: 2px;"> Última conexión: {{int.id_usuario.last_login}} </span>
-
     </div>
-
   </div>
 </div>
 {% endfor %}
 <!-- HASTA ACÁ IRÍA EL IF-->
-
+</div> 
 
 <style>
+body{
+  align-items: center;
+}
 .avatar img {
     position: relative;
     top: -15px; /* ajustar los valores para mover la imagen */
@@ -60,29 +59,9 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 5%;
+    margin: 1%;
     /* border:2px solid #fff; */
     display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-  *{box-sizing:border-box;}
-
-.container{
-  width:95%;
-  max-width:900px;
-  padding:32px 64px;
-  margin:auto;
 }
 
 .social{
@@ -102,7 +81,74 @@
   /*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
   margin-top:-100px;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-register{
+    width: 400px;
+    height: 650px;
+    display: inline-block;
+    background: rgb(109, 39, 50, 0.7) ;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px rgb(46, 37, 37);
+}
+
+.form-register h1{
+    font-size: 35px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+
+}
+
+.controls {
+    width: 100%;
+    background: #d68787;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:  1px solid #440329;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+/* .form-register p{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 25px;
+    margin-bottom: -15;
+} */
+
+.form-register a{
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: rgb(29, 28, 28);
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #8a5353;
+    border: none;
+    padding: 12px;
+    color: white; 
+    margin: 5px 0;
+    font-size: 16px;    
+}
+
 </style>
+
 {% endblock %}
 
 

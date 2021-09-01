@@ -20,7 +20,7 @@
     <nav class="navbar" style="background-color:rgba(0,0,0,0.8);">
         {% if user.is_authenticated %}
             <a href="{% url 'home'  %}" style="color:white; margin-right:auto; width: 160px;">Inicio</a>
-            <a href="{% url 'Contacto'  %}" style="color:white; margin-right:auto;">Contacto</a>
+            <a href="{% url 'Contacto'  %}" style="color:white; margin-right:auto;">Contacto</a>/<a href="{% url 'equipo' %} " style="color: white ;margin-right: auto;">Equipo</a>
             <a href="{% url 'logout'  %}" style="color:white; width: 100px;">Cerrar Sesión</a>
             <button class="darkModeSwitch" id="switch" style="width: 60px;">
                 <span><i class="fa fa-sun-o"></i></span>   
@@ -73,7 +73,7 @@
                 
         {% else %}
             <a href="{% url 'home'  %}" style="color:white; margin-right:auto; width: 60px;">Inicio</a>
-            <a href="{% url 'Contacto'  %}" style="color:white; margin-right:auto;">Contacto</a>
+            <a href="{% url 'Contacto'  %}" style="color:white; margin-right:auto;">Contacto</a>/<a href="{% url 'equipo' %}" style="color: white ;margin-right: auto;">Equipo</a> 
             <button class="darkModeSwitch" id="switch" style="width: 60px;">
                 <span><i class="fa fa-sun-o"></i></span>   
                 <span><i class="fa fa-moon-o"></i></span>
