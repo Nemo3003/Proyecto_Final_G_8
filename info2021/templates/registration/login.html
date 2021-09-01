@@ -2,52 +2,102 @@
 {% load static %}
 
 {% block title %}
-    <title>LOGIN TUTORIAL </title> 
+    <title>LOGIN </title> 
 {% endblock title %}
 
 {% block content %}
-<body>
-    
 
-<div style="position:relative;">
+<section class="form-register">
     <div class="container">
-        <h2 class="titulo-h2"> INICIAR SESIÓN </h2> 
+        <h1> Iniciar Sesión </h1> 
 
-            <form  method = "post"> 
-    
-            {% csrf_token%} 
-        
-            {{form.as_p}} 
-            <button type = "submit" > Iniciar sesión  </button> 
-            <p><a href="{% url 'password_reset' %}">¿Olvidaste tu Contraseña?</a></p>
-            <p><a href="{% url 'registrarse' %}">Registrarse</a></p>
+        <form method="post"> 
+        {% csrf_token%}
+            <div>
+                <input type="text" class="controls" name="username" placeholder="Nombre de Usuario" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+            </div>
+                
+            <div>
+                <input type="password" class="controls" name="password" placeholder="Contraseña" autocomplete="current-password" required="" id="id_password">
+            </div>
+            
+            <input type="submit" class="botons" value="Identificarse">
 
-            </form>
+        <p><a href="{% url 'password_reset' %}">¿Olvidaste tu Contraseña?</a></p>
+        <p><a href="{% url 'registrarse' %}">Registrarse</a></p>
+
+        </form>
     </div>
-</div>
+</section>
 
 <style>
-    body{
-        background: rgb(238,174,202);
-        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    .titulo-h2{
-        color:#333;
-        
-    }
-    .container{
-        border: 1px solid black;
-        width: 25%;
-        height: 25%;
+
+    .form-register{
+        width: 400px;
+        background: #24303c;
+        padding: 30px;
+        margin: auto;
         margin-top: 100px;
-        background-image: linear-gradient(to right top, #88ac92, #8dad8a, #94ad82, #9ead79, #a9ac71);
+        border-radius: 4px;
+        font-family: 'calibri';
+        color: white;
+        box-shadow: 7px 13px 37px rgb(190, 189, 189);
     }
-    button{
-        cursor: pointer;
+
+    .form-register h1{
+        font-size: 35px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+
     }
-    
+
+    .controls {
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border:  1px solid #1f53c5;
+        font-family: 'calibri';
+        font-size: 18px;
+        color: white;
+    }
+
+    .form-register p{
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 25px;
+        margin-bottom: -15;
+    }
+
+    .form-register a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .form-register a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .form-register .botons {
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 5px 0;
+        font-size: 16px;    
+    }
+
 </style>
-</body>
 {% endblock content %}
 
 

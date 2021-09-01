@@ -13,7 +13,7 @@ class Registrarse (CreateView):
     form_class = RegistroForm
     success_url = reverse_lazy('home')
     template_name = 'registration/registrarse.html'
-#----------------------------------- CAMBIO DE CONTRASEÑAS PARA USUARIOS -------------------------------------------------
+#----------------------------------- EQUIPO -------------------------------------------------
 
 def equipoView(request):
     integrantes = Equipo.objects.all()

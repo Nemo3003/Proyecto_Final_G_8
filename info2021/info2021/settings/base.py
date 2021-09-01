@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django_nvd3',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -158,12 +159,12 @@ EMAIL_PORT=587
 EMAIL_HOST_USER="gruponro8.info@gmail.com"
 EMAIL_HOST_PASSWORD="info123456"
 
-<<<<<<< HEAD
+""" <<<<<<< HEAD
 AppConfig.default = False
 
 # PARA QUE USE NUESTRO MODELS User DONDE CAMBIAMOS LAST_NAME Y FIRST_NAME
 # AUTH_USER_MODEL = 'login_register.User'
-=======
+======= """
 ADMIN_CHARTS_NVD3_JS_PATH = 'bow/nvd3/build/nv.d3.js'
 ADMIN_CHARTS_NVD3_CSS_PATH = 'bow/nvd3/build/nv.d3.css'
 ADMIN_CHARTS_D3_JS_PATH = 'bow/d3/d3.js'
@@ -180,5 +181,5 @@ BOWER_PATH = os.path.normpath('C:/Users/nemo/AppData/Roaming/npm/bower.cmd')
 
 
 
-AppConfig.default = False
->>>>>>> a749a0a21a720fba042f9fe9f3b6ff63a1865605
+""" AppConfig.default = False
+>>>>>>> a749a0a21a720fba042f9fe9f3b6ff63a1865605 """
