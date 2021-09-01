@@ -9,12 +9,13 @@ from .models import Pregunta, ElegirRespuesta, PreguntasRespondidas, QuizUsuario
 from .forms import ElegirInlineFormset
 
 class PerfilAdmin(UserAdmin):
-    # search_fields = ['username', 'first_name', 'last_name']
+    search_fields = ['username', 'first_name', 'last_name']
     list_display = [
     'username', 'first_name',
      'last_name',
      'is_staff', 'is_superuser', 'last_login']
-
+    list_filter = ['last_login']
+    list_order = ['username']
     fieldsets = (
         ('Usuario',
             {'fields': ('username', 'password')}),
@@ -25,10 +26,7 @@ class PerfilAdmin(UserAdmin):
                 'email',
 
             )}),
-        # ("otros datos",
-        #     {'fields':(
-        #         'birthday',
-        #     )}),
+       
         ('Permisos',
             {'fields': (
             'is_active',
