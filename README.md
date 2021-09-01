@@ -90,6 +90,7 @@ Esta página consiste en las siguientes partes:
     - En la esquina superior derecha tiene un botón que lleva al logueo del admin.
     - Contiene los botones a las redes sociales de EmpleoChaco.
     - Contiene un "Contactanos" funcional.
+    - Contiene un contador de visitas, el cual cada vez que se ingresa a la página cuenta cuantos en total han entrado hasta el momento.
     
  - Login y Registro: Fue hecho con HTML5, CSS3 y Django.
     - Contiene un botón que permite al usuario el regresar al inicio. 
@@ -137,7 +138,7 @@ Esta página consiste en las siguientes partes:
  
  Creación de las redes sociales del grupo: Juan Carlos Vega.
  
- Contador de visitantes: Juan Carlos Vega
+ Contador de visitantes: Juan Carlos Vega.
  
  Tecnologías utilizadas
  ----------------------
