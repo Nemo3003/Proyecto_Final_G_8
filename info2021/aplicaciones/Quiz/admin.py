@@ -25,10 +25,10 @@ class PerfilAdmin(UserAdmin):
                 'email',
 
             )}),
-        ("otros datos",
-            {'fields':(
-                'birthday',
-            )}),
+        # ("otros datos",
+        #     {'fields':(
+        #         'birthday',
+        #     )}),
         ('Permisos',
             {'fields': (
             'is_active',
