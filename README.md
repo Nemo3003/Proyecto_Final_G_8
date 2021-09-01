@@ -140,6 +140,8 @@ Esta página consiste en las siguientes partes:
  
  Contador de visitantes: Juan Carlos Vega.
  
+ Buscador en Google (debido a algunas complicaciones que ha tenido): Juan Carlos Vega
+ 
  Tecnologías utilizadas
  ----------------------
  HTML5, CSS3, Bootstrap, JavaScript, DJANGO, SQLITE3
