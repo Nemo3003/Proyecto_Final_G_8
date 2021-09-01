@@ -81,6 +81,8 @@ Día 26). Encontramos las librerias necesarias para realizar los últimos cambio
 
 Día 27). Intento fallido de implementar estadísticas. Registro funcionando correctamente. Página de equipo funcionando.
 
+Día 28). Contador de visitantes añadido desde una página de terceros. Algunos estilos mejorados.
+
 Esta página consiste en las siguientes partes:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
@@ -135,6 +137,7 @@ Esta página consiste en las siguientes partes:
  
  Creación de las redes sociales del grupo: Juan Carlos Vega.
  
+ Contador de visitantes: Juan Carlos Vega
  
  Tecnologías utilizadas
  ----------------------
