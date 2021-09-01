@@ -14,7 +14,8 @@ class PerfilAdmin(UserAdmin):
     'username', 'first_name',
      'last_name',
      'is_staff', 'is_superuser', 'last_login']
-
+    list_filter = ['last_login']
+    list_order = ['username']
     fieldsets = (
         ('Usuario',
             {'fields': ('username', 'password')}),
