@@ -79,6 +79,8 @@ Día 25). El archivo Excel para cargar preguntas es puesto en el repositorio. La
 
 Día 26). Encontramos las librerias necesarias para realizar los últimos cambios, tales como los de añadir estadísticas al admin.
 
+Día 27). Intento fallido de implementar estadísticas. Registro funcionando correctamente. Página de equipo funcionando.
+
 Esta página consiste en las siguientes partes:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
