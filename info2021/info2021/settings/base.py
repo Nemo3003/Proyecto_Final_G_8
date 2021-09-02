@@ -127,6 +127,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Para que no genere error al usar 'python manage.py collectstatic'
+STATIC_ROOT = BASE_DIR/ 'staticfiles' 
+
 STATICFILES_DIR = (
     os.path.join(os.path.dirname(BASE_DIR), 'static'),
     'djangobower.finders.BowerFinder'
