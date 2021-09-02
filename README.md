@@ -1,8 +1,17 @@
 # Proyecto-Final
--Instrucciones para que la aplicación funcione, es requerido que ejecutes el siguiente comando:
+- Instrucciones para que la aplicación funcione, es requerido que ejecutes el siguiente comando:
 ```bash
 pip install -r requirements.txt
 ```
+- Instrucciones para cargar las preguntas y las respuestas.
+  - Una vez te hayas logueado como admin, debes proceder a la aplicacion "Preguntas" en la cual podrás cargar tus preguntas junto a las respuestas. Ten en cuenta que 4 alternativas deben ser dadas (4 opciones), marca la casilla a la izquierda (la cual indica cual de las opciones es la correcta). También nota que hay un campo con un "3" el cual es el puntaje máximo, es decir, ahí se indican cuantos puntos se obtiene por responder correctamente.
+  - Guarda o guarda y continúa con otra pregunta. 
+  - Al jugar, las preguntas se dispondrán de manera aleatoria, por lo que los jugadores a pesar de obtener las mismas preguntas, las obtienen de manera desordenada.
+  - Si quieres editar algun resultado, basta con dirigirse a la vista del admin, preguntas respondidas y seleccionar el objeto que se creó.
+  - Para volver a jugar, es necesario que desde el admin se eliminen los objetos que se crean en 'preguntas respondidas'
+  - En quiz usuarios podrás agregar a más usuarios en el tablero. 
+  - Elegir respuesta solo almacena las posibles respuestas. Desde aquí puedes agregar respuestas a una pregunta en específico.
+
 
 Por favor, visitar https://github.com/areski/django-admin-tools-stats en caso de que no funcione. Instala lo que ahí está.
 
@@ -17,7 +26,7 @@ En el info2021/settings/base.py
 Una vez hecho todo esto, haz las migraciones.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-El proyecto final del grupo 8 de la comisión 6 del informatorio.
+El proyecto final del grupo 8 de la comisión 6 del informatorio. Diario.
 --------------------------------------
 Nos reunimos el día siguiente a la formación de los grupos para organizarnos y prepararnos para iniciar el proyecto en conjunto; nos dividimos en subgrupos.
 Fecha de Inicio del proyecto: 05/08/2021.
@@ -79,9 +88,9 @@ Día 25). El archivo Excel para cargar preguntas es puesto en el repositorio. La
 
 Día 26). Encontramos las librerias necesarias para realizar los últimos cambios, tales como los de añadir estadísticas al admin.
 
-Día 27). Intento fallido de implementar estadísticas. Registro funcionando correctamente. Página de equipo funcionando.
+Día 27). Intento fallido de implementar estadísticas. Registro funcionando correctamente. Página de equipo funcionando. Contador de visitantes añadido desde una página de terceros. Algunos estilos mejorados.
 
-Día 28). Contador de visitantes añadido desde una página de terceros. Algunos estilos mejorados.
+Día 28). Seguimos intentando implementar django-import-export, así como unos ultimos detalles. 
 
 Esta página consiste en las siguientes partes:
 ----------------------------
