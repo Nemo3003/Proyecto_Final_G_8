@@ -42,10 +42,10 @@ Día 4). Nueva Reunión. Participamos los 8 de la misma, iniciamos el proyecto D
 Día 5). El desarrollo del login y Registro sigue su curso, mientras los que no están participando de esa app, siguen aprendiendo cómo hacer lo que sigue.
 
 Día 6). Tareas reasignadas, esencialmente nos dividimos en tres grupos, Login y Registro, Visual y Admin. 
-       - Grupos: 
-              - Login y Registro: se encargarán del formulario de registro así como del login, para hacerlo funcional.
-              - Admin: se encargarán de poner las preguntas en una base de datos y de empezar a configurar el admin.
-              - Visual: se encargan de mejorar el apartado visual de la página, esencialmente, así como la interfaz del usuario, para que sea mucho más
+       -  Grupos: 
+              -  Login y Registro: se encargarán del formulario de registro así como del login, para hacerlo funcional.
+              -  Admin: se encargarán de poner las preguntas en una base de datos y de empezar a configurar el admin.
+              -  Visual: se encargan de mejorar el apartado visual de la página, esencialmente, así como la interfaz del usuario, para que sea mucho más
               agradable a la vista.
               
 Día 7). Más avance en materia del Login y Registro, así como en Admin, llegando a sentar las bases para las preguntas y el multiple choice. Hoy nos volvemos a reunir para trabajar más intensamente en el Login y el Registro. Página generadora de links descubierta: https://developers.facebook.com/docs/plugins/share-button/?locale=es_ES. Replanteamos un poco la estratégia en cuanto a la BBDD. A partir de mañana cargaremos las preguntas y respuestas.             
