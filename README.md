@@ -93,7 +93,7 @@ Día 27). Intento fallido de implementar estadísticas. Registro funcionando cor
 Día 28). Seguimos intentando implementar django-import-export, así como unos ultimos detalles. Video demostrativo hecho, mejoras/cambios en el login menores. No hemos podido implementar django-import-export.
 
 
-Esta página consiste en las siguientes partes:
+Composición general de la página:
 ----------------------------
  - Landing Page: contiene la vista principal de la página, dando la bienvenida a los participantes, también contiene unos botones de contacto (redes sociales).
     - Contiene el boton que lleva al login y el registro.
