@@ -6,10 +6,11 @@
 {% endblock %} 
 
 {% block content %} 
-<h1 style="color: white; margin: 0 10% 3% 25%;">Nuestro Equipo De Desarrollo</h1>
+<h1 style="color: white; margin: 0 5% 0 10%;">Nuestro Equipo De Desarrollo</h1>
 
-<div style="margin-top: 150px;">
+<section style="display: inline-block;">
  <!-- DESDE ACÁ IRÍA EL IF-->
+
  {% for int in integrantes %}
 <div class="form-register" style="border: 1px solid white;">
   <div>
@@ -46,7 +47,7 @@
 </div>
 {% endfor %}
 <!-- HASTA ACÁ IRÍA EL IF-->
-</div> 
+</section> 
 
 <style>
 body{
@@ -64,20 +65,6 @@ body{
     display: block;
 }
 
-<<<<<<< HEAD
-=======
-
-
-  *{box-sizing:border-box;}
-
-.container{
-  width:95%;
-  max-width:900px;
-  padding:32px 64px;
-  margin:auto;
-}
-
->>>>>>> d3e4d98de8c28fcb218e67c121ea518f71d22826
 .social{
   /*las imágenes usadas tienen width de 48px*/
   width:48px;
@@ -104,8 +91,8 @@ body{
 
 .form-register{
     width: 400px;
-    height: 650px;
-    display: inline-block;
+    height: 650px;   
+    display:inline-flex;
     background: rgb(109, 39, 50, 0.7) ;
     padding: 30px;
     margin: 20px;
@@ -113,6 +100,11 @@ body{
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px rgb(46, 37, 37);
+}
+
+.form-register div{
+  margin-top: auto;
+  display: inline-block;
 }
 
 .form-register h1{
@@ -133,14 +125,6 @@ body{
     font-size: 18px;
     color: white;
 }
-
-/* .form-register p{
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    margin-top: 25px;
-    margin-bottom: -15;
-} */
 
 .form-register a{
     text-decoration: none;
