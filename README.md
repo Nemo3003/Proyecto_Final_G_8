@@ -90,7 +90,8 @@ Día 26). Encontramos las librerias necesarias para realizar los últimos cambio
 
 Día 27). Intento fallido de implementar estadísticas. Registro funcionando correctamente. Página de equipo funcionando. Contador de visitantes añadido desde una página de terceros. Algunos estilos mejorados.
 
-Día 28). Seguimos intentando implementar django-import-export, así como unos ultimos detalles. 
+Día 28). Seguimos intentando implementar django-import-export, así como unos ultimos detalles. Video demostrativo hecho, mejoras/cambios en el login menores. No hemos podido implementar 
+
 
 Esta página consiste en las siguientes partes:
 ----------------------------
@@ -104,11 +105,13 @@ Esta página consiste en las siguientes partes:
  - Login y Registro: Fue hecho con HTML5, CSS3 y Django.
     - Contiene un botón que permite al usuario el regresar al inicio. 
     - Permite al usuario el loguearse y/o registrarse para empezar el juego.
+    - Puedes reestablecer contraseñas también.
      
  - Perfil de Admin:
     -  Inicia con un un login, hecho en: HTML5, CSS3 y Django.
-    -  Contiene las opciones de agregar y eliminar usuarios, grupos, preguntas y respuestas así como para contabilizar las respuestas correctas.  
+    -  Contiene las opciones de agregar y eliminar usuarios, grupos, preguntas y respuestas.
     -  Registra los intentos y permite colocar el puntaje máximo por pregunta respondida correctamente.
+    -  Cuenta la cantidad de usuarios. 
     
  - Perfil de Participante:
     - Pantalla de inicio con boton para iniciar.
@@ -121,6 +124,7 @@ Esta página consiste en las siguientes partes:
     - Tiene un máximo de 4 posibles respuestas, al finalizar te da la opción de consultar el tablero, el cual contiene tus resultados y los de los demás participantes.
     - Consiste de cuantas preguntas el admin quiera poner, con un mínimo y máximo de 4 respuestas, al finalizar se le da al participante la oportunidad de ver su puntaje comparándolo con los demás jugadores. 
     - Al terminar el juego, el usuario puede ver sus resultados comparados a los de otros jugadores y (si lo desea) puede compartir estos resultados por correo o en algunas redes sociales.
+    - Las preguntas son mostradas en manera aleatoria.
 
 
  Participación general:
@@ -145,7 +149,7 @@ Esta página consiste en las siguientes partes:
  
  Botón de compartir resultados: Federico Asis.
  
- Creación de las redes sociales del grupo: Juan Carlos Vega.
+ Creación y manejo de las redes sociales del grupo: Juan Carlos Vega.
  
  Contador de visitantes: Juan Carlos Vega.
  
