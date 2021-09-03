@@ -90,7 +90,7 @@ Día 26). Encontramos las librerias necesarias para realizar los últimos cambio
 
 Día 27). Intento fallido de implementar estadísticas. Registro funcionando correctamente. Página de equipo funcionando. Contador de visitantes añadido desde una página de terceros. Algunos estilos mejorados.
 
-Día 28). Seguimos intentando implementar django-import-export, así como unos ultimos detalles. Video demostrativo hecho, mejoras/cambios en el login menores. No hemos podido implementar 
+Día 28). Seguimos intentando implementar django-import-export, así como unos ultimos detalles. Video demostrativo hecho, mejoras/cambios en el login menores. No hemos podido implementar django-import-export.
 
 
 Esta página consiste en las siguientes partes:
