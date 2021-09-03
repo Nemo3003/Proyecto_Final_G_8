@@ -26,7 +26,7 @@ En el info2021/settings/base.py
 Una vez hecho todo esto, haz las migraciones.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-El proyecto final del grupo 8 de la comisión 6 del informatorio. Diario.
+Diario de Desarrollo. Grupo 8 Comisión 6.
 --------------------------------------
 Nos reunimos el día siguiente a la formación de los grupos para organizarnos y prepararnos para iniciar el proyecto en conjunto; nos dividimos en subgrupos.
 Fecha de Inicio del proyecto: 05/08/2021.
